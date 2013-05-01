@@ -1,0 +1,721 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY pr "http://purl.obolibrary.org/obo/pr#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;ND/external/PR_import.owl#"
+     xml:base="&obo;ND/external/PR_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:pr="&obo;pr#">
+    <owl:Ontology rdf:about="&obo;ND/external/PR_import.owl">
+        <owl:versionInfo>Current version created on 11/01/12 by Alexander P. Cox.
+The BFO2 terms &apos;object&apos; and &apos;fiat object&apos; were MIREOTed and merged with the original PR_import.owl in order to make the current import file compliant with ND, which uses BFO2.</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;BFO_0000179">
+        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;BFO_0000180">
+        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
+        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000601">
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000602">
+        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000232">
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000600">
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;is_transitive"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasNarrowSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000083 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000083">
+        <rdfs:label xml:lang="en">occupies spatial region at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000108">
+        <rdfs:label xml:lang="en">exists at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000169 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000169">
+        <rdfs:label xml:lang="en">specifically depends on at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000176">
+        <rdfs:label xml:lang="en">part of continuant at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000178 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000178">
+        <rdfs:label xml:lang="en">has continuant part at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000186 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000186">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">part of continuant at all times that whole exists</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000187 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000187">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has continuant part at all times that part exists</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#derives_from -->
+
+    <owl:ObjectProperty rdf:about="&obo;pr#derives_from">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">derives_from</rdfs:label>
+        <oboInOwl:id rdf:datatype="&xsd;string">derives_from</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#lacks_part -->
+
+    <owl:ObjectProperty rdf:about="&obo;pr#lacks_part">
+        <rdfs:label rdf:datatype="&xsd;string">lacks_part</rdfs:label>
+        <oboInOwl:is_transitive rdf:datatype="&xsd;integer">0</oboInOwl:is_transitive>
+        <oboInOwl:id rdf:datatype="&xsd;string">lacks_part</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#part_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;pr#part_of">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">part_of</rdfs:label>
+        <oboInOwl:id rdf:datatype="&xsd;string">part_of</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33708 -->
+
+    <owl:Class rdf:about="&obo;CHEBI_33708">
+        <rdfs:label rdf:datatype="&xsd;string">amino-acid residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000176"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_000018263"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">CHEBI:33708</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">When two or more amino acids combine to form a peptide, the elements of water are removed, and what remains of each amino acid is called an amino-acid residue.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">amino acid residue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">protein residue</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000000001 -->
+
+    <owl:Class rdf:about="&obo;PR_000000001">
+        <rdfs:label rdf:datatype="&xsd;string">protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000018263"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000000001</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Proteins descended from a common ancestor can be classified into families and superfamilies composed of products of evolutionarily-related genes. The domain architecture of a protein is described by the order of its constituent domains. Proteins with the same domains in the same order are defined as homeomorphic [PRO:WCB].</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000004168 -->
+
+    <owl:Class rdf:about="&obo;PR_000004168">
+        <rdfs:label rdf:datatype="&xsd;string">amyloid beta A4 protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human APP gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">A4</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ABPP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">AD1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">AG</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">APP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">APPI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CVAP</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic. Requested by=Alzforum.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">PN-II</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000004168</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">PreA4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">alzheimer disease amyloid A4 protein homolog</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">alzheimer disease amyloid protein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">amyloidogenic glycoprotein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cerebral vascular amyloid peptide</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">protease nexin-II</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000005907 -->
+
+    <owl:Class rdf:about="&obo;PR_000005907">
+        <rdfs:label rdf:datatype="&xsd;string">alpha-crystallin A chain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human CRYAA gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">CRYA1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYAA</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">HspB4</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000005907</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">heat shock protein beta-4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000005908 -->
+
+    <owl:Class rdf:about="&obo;PR_000005908">
+        <rdfs:label rdf:datatype="&xsd;string">alpha-crystallin B chain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human CRYAB gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">CRYA2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYAB</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">HspB5</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">P23</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000005908</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">alpha(B)-crystallin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">heat shock protein beta-5</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">renal carcinoma antigen NY-REN-27</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">rosenthal fiber component</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000005909 -->
+
+    <owl:Class rdf:about="&obo;PR_000005909">
+        <rdfs:label rdf:datatype="&xsd;string">beta-crystallin A2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human CRYBA2 gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYBA2</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000005909</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">beta-A2 crystallin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000005910 -->
+
+    <owl:Class rdf:about="&obo;PR_000005910">
+        <rdfs:label rdf:datatype="&xsd;string">beta-crystallin A4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human CRYBA4 gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYBA4</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000005910</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">beta-A4 crystallin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000005911 -->
+
+    <owl:Class rdf:about="&obo;PR_000005911">
+        <rdfs:label rdf:datatype="&xsd;string">beta-crystallin B1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human CRYBB1 gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYBB1</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000005911</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">beta-B1 crystallin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000005912 -->
+
+    <owl:Class rdf:about="&obo;PR_000005912">
+        <rdfs:label rdf:datatype="&xsd;string">beta-crystallin B2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human CRYBB2 gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">CRYB2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">CRYB2A</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYBB2</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000005912</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">beta-B2 crystallin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">beta-crystallin Bp</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000005913 -->
+
+    <owl:Class rdf:about="&obo;PR_000005913">
+        <rdfs:label rdf:datatype="&xsd;string">beta-crystallin B3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human CRYBB3 gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">CRYB3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYBB3</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000005913</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">beta-B3 crystallin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000005919 -->
+
+    <owl:Class rdf:about="&obo;PR_000005919">
+        <rdfs:label rdf:datatype="&xsd;string">beta-crystallin S</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human CRYGS gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYGS</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">GRYG8</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000005919</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">gamma-S-crystallin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">gamma-crystallin S</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000011118 -->
+
+    <owl:Class rdf:about="&obo;PR_000011118">
+        <rdfs:label rdf:datatype="&xsd;string">neurofilament heavy polypeptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">200 kDa neurofilament protein</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human NEFH gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">KIAA0845</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NEFH</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NF-H</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">NFH</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000011118</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">neurofilament triplet H protein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000011119 -->
+
+    <owl:Class rdf:about="&obo;PR_000011119">
+        <rdfs:label rdf:datatype="&xsd;string">neurofilament light polypeptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">68 kDa neurofilament protein</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human NEFL gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NEFL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NF-L</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">NF68</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">NFL</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000011119</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">neurofilament triplet L protein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000011120 -->
+
+    <owl:Class rdf:about="&obo;PR_000011120">
+        <rdfs:label rdf:datatype="&xsd;string">neurofilament medium polypeptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">160 kDa neurofilament protein</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human NEFM gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">NEF3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NEFM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NF-M</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">NFM</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000011120</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">neurofilament 3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">neurofilament triplet M protein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000015322 -->
+
+    <owl:Class rdf:about="&obo;PR_000015322">
+        <rdfs:label rdf:datatype="&xsd;string">alpha-synuclein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human SNCA gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NACP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">PARK1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000015322</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">SNCA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Syn</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">non-A beta component of AD amyloid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">non-A4 component of amyloid precursor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000016777 -->
+
+    <owl:Class rdf:about="&obo;PR_000016777">
+        <rdfs:label rdf:datatype="&xsd;string">tau-tubulin kinase 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human TTBK1 gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">BDTK</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">KIAA1855</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000016777</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">TTBK1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">brain-derived tau kinase</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000016778 -->
+
+    <owl:Class rdf:about="&obo;PR_000016778">
+        <rdfs:label rdf:datatype="&xsd;string">tau-tubulin kinase 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human TTBK2 gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">KIAA0847</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000016778</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">TTBK2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Ttbk1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000016963 -->
+
+    <owl:Class rdf:about="&obo;PR_000016963">
+        <rdfs:label rdf:datatype="&xsd;string">polyubiquitin-C</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A protein that is a translation product of the human UBC gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=gene. Flag=automatic.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000016963</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">UBC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000018263 -->
+
+    <owl:Class rdf:about="&obo;PR_000018263">
+        <rdfs:label rdf:datatype="&xsd;string">amino acid chain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A polymer of amino acids linked by peptide bonds.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000018263</oboInOwl:id>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">peptide</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">polypeptide</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000018264 -->
+
+    <owl:Class rdf:about="&obo;PR_000018264">
+        <rdfs:label rdf:datatype="&xsd;string">proteolytic cleavage product</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000018263"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An amino acid chain produced as the result of peptide bond cleavage of a longer amino acid chain.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000018264</oboInOwl:id>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">peptide</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">polypeptide</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000019502 -->
+
+    <owl:Class rdf:about="&obo;PR_000019502">
+        <rdfs:label rdf:datatype="&xsd;string">alpha-crystallin A chain proteolytic cleavage product</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;PR_000018264"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;pr#derives_from"/>
+                        <owl:someValuesFrom rdf:resource="&obo;PR_000005907"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A proteolytic cleavage product that is derived from alpha-crystallin A chain.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYAA/ClvPrd</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=modification. Flag=automatic.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000019502</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000019505 -->
+
+    <owl:Class rdf:about="&obo;PR_000019505">
+        <rdfs:label rdf:datatype="&xsd;string">beta-crystallin B1 proteolytic cleavage product</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;PR_000018264"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;pr#derives_from"/>
+                        <owl:someValuesFrom rdf:resource="&obo;PR_000005911"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A proteolytic cleavage product that is derived from beta-crystallin B1.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CRYBB1/ClvPrd</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=modification. Flag=automatic.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000019505</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000020724 -->
+
+    <owl:Class rdf:about="&obo;PR_000020724">
+        <rdfs:label rdf:datatype="&xsd;string">neurofilament medium polypeptide, initiator methionine removed form</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;PR_000011120"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;pr#lacks_part"/>
+                        <owl:someValuesFrom rdf:resource="&obo;PR_000021937"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A neurofilament medium polypeptide that has had the initiator methionine removed.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Category=modification. Flag=automatic.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NEFM/InitMet-</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000020724</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000021935 -->
+
+    <owl:Class rdf:about="&obo;PR_000021935">
+        <rdfs:label rdf:datatype="&xsd;string">immature protein part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000176"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_000000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A part of a protein that is removed during the protein maturation process.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000021935</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cleaved_peptide_region</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000021937 -->
+
+    <owl:Class rdf:about="&obo;PR_000021937">
+        <rdfs:label rdf:datatype="&xsd;string">initiator methionine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000021935"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An immature protein part that is the N-terminal most residue.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PR:000021937</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">The initiator methionine is cleaved co-translationally. For this reason, we do not use the derives_from relation when defining protein forms lacking the initiator (because the precursor form does not yet exist at the time of removal).</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+
