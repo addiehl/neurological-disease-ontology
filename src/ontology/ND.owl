@@ -357,6 +357,14 @@ If you are interested in participating in the development of ND, please send an 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000178 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000178">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000186 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000186">
@@ -370,8 +378,9 @@ If you are interested in participating in the development of ND, please send an 
     <ObjectProperty rdf:about="&obo;ND_0004000">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:label>results in</rdfs:label>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
-        <obo:IAO_0000115>This is a shortcut relation.  More specifically:
+        <obo:IAO_0000116>This is a shortcut relation.  More specifically:
 (&apos;disease d&apos; results in &apos;syndrome s&apos;)
 is a shortcut for:
 ((&apos;disease d&apos; realized in &apos;disease course c&apos;) and (&apos;disease course c&apos; produces &apos;syndrome s&apos;).  
@@ -379,9 +388,18 @@ is a shortcut for:
 Alternatively, if syndromes are process profiles, then:
 (&apos;disease d&apos; results in &apos;syndrome s&apos;)
 is a shortcut for:
-((&apos;disease d&apos; realized in &apos;disease course c&apos;) and (&apos;disease course c&apos; has profile &apos;syndrome s&apos;))</obo:IAO_0000115>
+((&apos;disease d&apos; realized in &apos;disease course c&apos;) and (&apos;disease course c&apos; has profile &apos;syndrome s&apos;))</obo:IAO_0000116>
+        <obo:IAO_0000115>‘disease’ D &apos;results in&apos; ‘syndrome’ S =def
+
+D &apos;is realized by&apos; ‘disease course’ C
+and (C &apos;has specific dependent at some time&apos; S) 
+and (C &apos;has participant&apos; ‘organism’ O) 
+and (O &apos;is bearer of&apos; (D and S))</obo:IAO_0000115>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
         <obo:IAO_0000118>results_in</obo:IAO_0000118>
         <inverseOf rdf:resource="&obo;ND_0004001"/>
+        <rdfs:domain rdf:resource="&obo;OGMS_0000031"/>
+        <rdfs:range rdf:resource="&obo;OGMS_0000086"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </ObjectProperty>
     
@@ -403,6 +421,8 @@ Alternatively, if syndromes are process profiles, then:
 is a shortcut for:
 ((&apos;syndrome s&apos; process profile of &apos;disease course c&apos;) and (&apos;disease course c&apos; realizes &apos;disease d&apos;)).</obo:IAO_0000115>
         <obo:IAO_0000118>results_from</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;OGMS_0000031"/>
+        <rdfs:domain rdf:resource="&obo;OGMS_0000086"/>
     </ObjectProperty>
     
 
@@ -592,6 +612,861 @@ is a shortcut for:
     
 
 
+    <!-- http://purl.obolibrary.obo/obo/ND_0008000 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008000">
+        <rdfs:label>cerebrovascular disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <obo:IAO_0000115>A cerebrovascular disorder is a disorder located in the vasculature of the brain.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alexander D. Diehl</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008001 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008001">
+        <rdfs:label>stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008000"/>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000118>cerebrovascular accident</obo:IAO_0000118>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008002 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008002">
+        <rdfs:label>ischemic stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008001"/>
+        <obo:IAO_0000116>disorder. occurs when an artery to the brain is blocked.  The brain depends on its arteries to bring fresh blood from the heart and lungs. The blood carries oxygen and nutrients to the brain, and takes away carbon dioxide and cellular waste. If an artery is blocked, the brain cells (neurons) cannot make enough energy and will eventually stop working. If the artery remains blocked for more than a few minutes, the brain cells may die. The most common problem is narrowing of the arteries in the neck or head. This is most often caused by atherosclerosis, or gradual cholesterol deposition. If the arteries become too narrow, blood cells may collect and form blood clots. These blood clots can block the artery where they are formed (thrombosis), or can dislodge and become trapped in arteries closer to the brain (embolism). Another cause of  stroke is blood clots in the heart, which can occur as a result of irregular heartbeat (for example, atrial fibrillation), heart attack, or abnormalities of the heart valves. While these are the most common causes of ischemic stroke, there are many other possible causes. Examples include use of street drugs, traumatic injury to the blood vessels of the neck, or disorders of blood clotting. (http://www.strokecenter.org/patients/about-stroke/ischemic-stroke/)
+</obo:IAO_0000116>
+        <obo:IAO_0000118>cerebral ischemia</obo:IAO_0000118>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000118>cerebral infarction</obo:IAO_0000118>
+        <obo:IAO_0000115>An ischemic stroke is caused by the lack of blood flow to part of the brain which then initiates the ischemic cascade and results in brain cell damage and infarction.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
+    </Class>
+    <Axiom>
+        <annotatedTarget>cerebral infarction</annotatedTarget>
+        <obo:IAO_0000116>The relationship of &apos;cerebral infarction&apos; to &apos;ischemic stroke&apos; is unknown.</obo:IAO_0000116>
+        <annotatedSource rdf:resource="http://purl.obolibrary.obo/obo/ND_0008002"/>
+        <annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+    </Axiom>
+    <Axiom>
+        <annotatedTarget>cerebral ischemia</annotatedTarget>
+        <obo:IAO_0000116>The relationship of &apos;cerebral ischemia&apos; to &apos;ischemic stroke&apos; is unknown.</obo:IAO_0000116>
+        <annotatedSource rdf:resource="http://purl.obolibrary.obo/obo/ND_0008002"/>
+        <annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008003 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008003">
+        <rdfs:label>hemorrhagic stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008001"/>
+        <rdfs:comment></rdfs:comment>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008004 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008004">
+        <rdfs:label>thrombotic stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008002"/>
+        <obo:IAO_0000118>cerebral thrombosis</obo:IAO_0000118>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <rdfs:comment>disorder. thrombotic stroke occurs when diseased or damaged cerebral arteries become blocked by the formation of a blood clot within the brain. Clinically referred to as cerebral thrombosis or cerebral infarction, this type of event is responsible for almost 50 percent of all strokes. Cerebral thrombosis can also be divided into an additional two categories that correlate to the location of the blockage within the brain: large-vessel thrombosis and small-vessel thrombosis. Large-vessel thrombosis is the term used when the blockage is in one of the brain’s larger blood-supplying arteries such as the carotid or middle cerebral, while small-vessel thrombosis involves one (or more) of the brain’s smaller, yet deeper, penetrating arteries. This latter type of stroke is also called a lacuner stroke.
+</rdfs:comment>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000115>A thrombotic stroke is an ischemic stroke that occurs when diseased or damaged cerebral arteries become blocked by the formation of a blood clot within the brain.</obo:IAO_0000115>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008005 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008005">
+        <rdfs:label>embolic stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008002"/>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000118>embolic infarction</obo:IAO_0000118>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <rdfs:comment>disorder. embolic stroke is also caused by a clot within an artery, but in this case the clot (or emboli) forms somewhere other than in the brain itself. Often from the heart, these emboli will travel in the bloodstream until they become lodged and cannot travel any farther. This naturally restricts the flow of blood to the brain and results in near-immediate physical and neurological deficits.
+</rdfs:comment>
+        <obo:IAO_0000115>An embolic stroke is an ischemic stroke that is caused by a embolus that forms somewhere other than the brain.</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008007 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008007">
+        <rdfs:label>large-vessel thrombosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008004"/>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000115>Large-vessel thrombosis is a thrombotic stroke with physical basis in the larger blood-supplying arteries such as the carotid or middle cerebral artery.</obo:IAO_0000115>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000116>look at Ropper/Brown; Pinciples of Neurology. 8th ed pp686 for more info</obo:IAO_0000116>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008008 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008008">
+        <rdfs:label>small-vessel thrombosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008004"/>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000115>Small-vessel thrombosis is a thrombotic stroke with physical basis in one (or more) of the brain’s smaller, yet deeper, penetrating arteries such as the circle of willis,cerebellar arteries and basilar artery.</obo:IAO_0000115>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000116>look at Ropper/Brown; Pinciples of Neurology. 8th ed pp686 for more info</obo:IAO_0000116>
+        <obo:IAO_0000118>lacuner stroke</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008009 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008009">
+        <rdfs:label>diagnosis of cryptogenic stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008034"/>
+        <obo:IAO_0000118>diagnosis of stroke of unknown cause</obo:IAO_0000118>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000116>potential definition-A cryptogenic stroke is a stroke with physical basis in the brain that is caused by unknown is the result of unknown,but is clinically recorded as embolism and results in brain cell damage and infaraction.</obo:IAO_0000116>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008010 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008010">
+        <rdfs:label>anterior cerebral circulation infarction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008002"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008011 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008011">
+        <rdfs:label>cerebral infarction due to cerebral venous thrombosis, non-pyogenic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008012 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008012">
+        <rdfs:label>cerebral infarction due to embolism of cerebral arteries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008005"/>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008013 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008013">
+        <rdfs:label>cerebral infarction due to thrombosis of cerebral arteries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008014 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008014">
+        <rdfs:label>hemorrhagic cerebral infarction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008003"/>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000116>consider revision-marcus/naveed term consider moving/merging to CEREBELLAR HEMORRHAGE</obo:IAO_0000116>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008016 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008016">
+        <rdfs:label>diagnosis of silent stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008034"/>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000116>needs review-maybe merge into other stroke catagories based on physiology</obo:IAO_0000116>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008017 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008017">
+        <rdfs:label>lacunar infarct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008002"/>
+        <obo:IAO_0000118>lacunar stroke</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008018 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008018">
+        <rdfs:label>intracerebral hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008003"/>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000115>an Intracerebral hemorrhage is a hemmorhagic stroke with physical basis in the brain is caused by high blood pressure, trauma,vascular malformations and is the result of a blood vessel in the brain bursting and spilling over into the brain and results in brain cell damage and infaraction.</obo:IAO_0000115>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <rdfs:comment>Intracerebral hemorrhage. In an intracerebral hemorrhage, a blood vessel in the brain bursts and spills into the surrounding brain tissue, damaging brain cells. Brain cells beyond the leak are deprived of blood and damaged. High blood pressure, trauma, vascular malformations, use of blood-thinning medications and other conditions may cause intracerebral hemorrhage. </rdfs:comment>
+        <obo:IAO_0000119>http://www.mayoclinic.com/health/stroke/DS00150/DSECTION=causes</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008020 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008020">
+        <rdfs:label>subarachnoid hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008003"/>
+        <obo:IAO_0000119>http://www.mayoclinic.com/health/stroke/DS00150/DSECTION=causes</obo:IAO_0000119>
+        <obo:IAO_0000118>ruptured saccular aneurysm</obo:IAO_0000118>
+        <obo:IAO_0000115>A subarachnoid hemorrage is a hemorrhagic stroke that has physical basis on the surface of the brain and is caused by the rupture of an aneurysm and is the result of an artery on the surface of your brain bursting and spilling into the pia mater which is often charchterized by a sudden thunderclap headache and results in brain cell damage and infaraction. (may lead to vasospasm which may cause further cell damage via ischema)</obo:IAO_0000115>
+        <obo:IAO_0000117>Subarachnoid hemorrhage. In a subarachnoid hemorrhage, an artery on or near the surface of your brain bursts and spills into the space between the surface of your brain and your skull. This bleeding is often signaled by a sudden, severe headache. A subarachnoid hemorrhage is commonly caused by the rupture of an aneurysm, a small sack-shaped or berry-shaped outpouching on an artery in the brain. After the hemorrhage, the blood vessels in your brain may widen and narrow erratically (vasospasm), causing brain cell damage by further limiting blood flow to parts of your brain.</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000118>spontaneous subarachnoid hemorrhage</obo:IAO_0000118>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+    </Class>
+    <Axiom>
+        <annotatedTarget>ruptured saccular aneurysm</annotatedTarget>
+        <obo:IAO_0000116> from Ropper/Brown; Pinciples of Neurology. 8th ed- look over</obo:IAO_0000116>
+        <annotatedSource rdf:resource="http://purl.obolibrary.obo/obo/ND_0008020"/>
+        <annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+    </Axiom>
+    <Axiom>
+        <annotatedTarget>spontaneous subarachnoid hemorrhage</annotatedTarget>
+        <obo:IAO_0000116> from Ropper/Brown; Pinciples of Neurology. 8th ed- look over</obo:IAO_0000116>
+        <annotatedSource rdf:resource="http://purl.obolibrary.obo/obo/ND_0008020"/>
+        <annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008021 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008021">
+        <rdfs:label>primary intracerebral hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008018"/>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed</obo:IAO_0000119>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000118>hypertensive intracerebral hemorrhage</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008023 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008023">
+        <rdfs:label>putaminal hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008021"/>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed</obo:IAO_0000119>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000118>hypertensive intracerebral hemorrhage</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008024 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008024">
+        <rdfs:label>thalamic hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008021"/>
+        <obo:IAO_0000118>hypertensive intracerebral hemorrhage</obo:IAO_0000118>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008025 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008025">
+        <rdfs:label>pontine hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008021"/>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000118>hypertensive intracerebral hemorrhage</obo:IAO_0000118>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008026 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008026">
+        <rdfs:label>cerebellar hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008021"/>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed</obo:IAO_0000119>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000118>hypertensive intracerebral hemorrhage</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008027 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008027">
+        <rdfs:label>lobar hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008021"/>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed</obo:IAO_0000119>
+        <obo:IAO_0000118>hypertensive intracerebral hemorrhage</obo:IAO_0000118>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008028 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008028">
+        <rdfs:label>infarct of cerebrum due to iatrogenic cerebrovascular accident</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008014"/>
+        <obo:IAO_0000116>consider revision-marcus/naveed term consider moving/merging to CEREBELLAR HEMORRHAGE</obo:IAO_0000116>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008029 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008029">
+        <rdfs:label>transient ischemic attack</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008004"/>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed pp 691- labels source as being atherothrombotic</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008030 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008030">
+        <rdfs:label>hemespheric transient ischemic attack</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008029"/>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed pp 691- labels source as being atherothrombotic</obo:IAO_0000119>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008031 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008031">
+        <rdfs:label>brainstem transient ischemic attack</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008029"/>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed pp 691- labels source as being atherothrombotic</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008032 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008032">
+        <rdfs:label>lacunar transient ischemic attack</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008029"/>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>Ropper/Brown; Pinciples of Neurology. 8th ed pp 691- labels source as being atherothrombotic</obo:IAO_0000119>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008033 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008033">
+        <rdfs:label>diagnosis of cerebrovascular disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0001063"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008034 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008034">
+        <rdfs:label>diagnosis of stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008033"/>
+        <obo:IAO_0000116>if adding diagnostic criteria consider addition of 1.) NIH stroke scale (http://radiopaedia.org/articles/national-institutes-of-health-stroke-scale), 2.)Orgogozo stroke scale, 3.) Canadian Neurological scale, 4.) Mathew stroke scale, 5.) Scandanavian stroke scale.</obo:IAO_0000116>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008035 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008035">
+        <rdfs:label>diagnosis of stroke as per Oxford Community Stroke Project</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008063"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000116>These are collections of diagnosis according to the OCSP</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008036 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008036">
+        <rdfs:label>diagnoisis of total anterior circulation stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008035"/>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000118>TAC</obo:IAO_0000118>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008037 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008037">
+        <rdfs:label>diagnoisis of lacunar stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008035"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000118>LAC</obo:IAO_0000118>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008038 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008038">
+        <rdfs:label>diagnoisis of partial anterior circulation stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008035"/>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000118>PAC</obo:IAO_0000118>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008039 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008039">
+        <rdfs:label>diagnoisis of posterior circulation stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008035"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000118>POC</obo:IAO_0000118>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008040 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008040">
+        <rdfs:label>diagnoisis of posterior circulation syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008039"/>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000118>POCS</obo:IAO_0000118>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008041 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008041">
+        <rdfs:label>diagnoisis of posterior circulation infarct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008039"/>
+        <obo:IAO_0000118>POCI</obo:IAO_0000118>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008042 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008042">
+        <rdfs:label>diagnoisis of posterior circulation hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008039"/>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000118>POCH</obo:IAO_0000118>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008043 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008043">
+        <rdfs:label>diagnoisis of partial anterior circulation syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008038"/>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000118>PACS</obo:IAO_0000118>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008044 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008044">
+        <rdfs:label>diagnoisis of partial anterior circulation infarct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008038"/>
+        <obo:IAO_0000118>PACI</obo:IAO_0000118>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008045 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008045">
+        <rdfs:label>diagnoisis of partial anterior circulation hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008038"/>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000118>PACH</obo:IAO_0000118>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008046 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008046">
+        <rdfs:label>diagnoisis of total anterior circulation syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008036"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000118>TACS</obo:IAO_0000118>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008047 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008047">
+        <rdfs:label>diagnoisis of total anterior circulation infarct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008036"/>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000118>TACI</obo:IAO_0000118>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008048 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008048">
+        <rdfs:label>diagnoisis of total anterior circulation hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008036"/>
+        <obo:IAO_0000118>TACH</obo:IAO_0000118>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008049 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008049">
+        <rdfs:label>diagnoisis of lacunar syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008037"/>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000118>LACS</obo:IAO_0000118>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008050 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008050">
+        <rdfs:label>diagnoisis of lacunar infarct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008037"/>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000118>LACI</obo:IAO_0000118>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008051 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008051">
+        <rdfs:label>diagnoisis of lacunar hemorrhage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008037"/>
+        <obo:IAO_0000118>LACH</obo:IAO_0000118>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008053 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008053">
+        <rdfs:label>diagnosis of stroke as per Trial of Org 10172 in Acute Stroke Treatment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008063"/>
+        <obo:IAO_0000116>These are collections of diagnosis according to TOAST</obo:IAO_0000116>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000118>TOAST</obo:IAO_0000118>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008054 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008054">
+        <rdfs:label>diagnosis of large-artery atherosclerosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008053"/>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008055 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008055">
+        <rdfs:label>diagnosis of large-artery atherosclerosis due to embolus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008054"/>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008056 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008056">
+        <rdfs:label>diagnosis of large-artery atherosclerosis due to thrombosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008054"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008057 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008057">
+        <rdfs:label>diagnosis of large-artery cardioembolism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008053"/>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008058 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008058">
+        <rdfs:label>diagnosis of large-artery high-risk cardioembolism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008057"/>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008059 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008059">
+        <rdfs:label>diagnosis of large-artery medium-risk cardioembolism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008057"/>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008060 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008060">
+        <rdfs:label>diagnosis of small-vessel occlusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008053"/>
+        <obo:IAO_0000118>diagnosis of lucane occlusion</obo:IAO_0000118>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008061 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008061">
+        <rdfs:label>diagnosis of stroke of other determined aetiology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008053"/>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008062 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008062">
+        <rdfs:label>diagnosis of stroke of undetermined aetiology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008053"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.obo/obo/ND_0008063 -->
+
+    <Class rdf:about="http://purl.obolibrary.obo/obo/ND_0008063">
+        <rdfs:label>diagnosis of ischemic stroke</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.obo/obo/ND_0008034"/>
+        <obo:IAO_0000117>Naveed Chaudhry</obo:IAO_0000117>
+        <obo:IAO_0000117>Marcus Ng</obo:IAO_0000117>
+        <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
+        <obo:IAO_0000116>if adding diagnostic criteria consider addition of 1.) NIH stroke scale, 2.)Orgogozo stroke scale, 3.) Canadian Neurological scale, 4.) Mathew stroke scale, 5.) Scandanavian stroke scale.</obo:IAO_0000116>
+    </Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000019">
@@ -759,38 +1634,31 @@ is a shortcut for:
 
     <Class rdf:about="&obo;ND_0000001">
         <rdfs:label>neurological disease</rdfs:label>
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OGMS_0000031"/>
-                    <Restriction>
-                        <onProperty rdf:resource="&obo;BFO_0000113"/>
-                        <someValuesFrom>
-                            <Class>
-                                <intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;ND_0005501"/>
-                                    <Restriction>
-                                        <onProperty rdf:resource="&obo;BFO_0000082"/>
-                                        <someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
-                                    </Restriction>
-                                </intersectionOf>
-                            </Class>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000031"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;BFO_0000052"/>
+                <someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;BFO_0000113"/>
+                <someValuesFrom rdf:resource="&obo;ND_0005501"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>MJ: Neurological diseases affect the functioning of the nervous system and are caused by structural, biochemical, or electrical abnormalities in the brain, spinal cord, peripheral nerves, plexus or glia.
+
+There are varying etiologies and material bases for neurological diseases, resulting in various patholgies, all somewhat loosely associated by &quot;affecting&quot; the nervous system.
+
+As the root node in the ontology (disease branch), this may be best regarded as a primitive. Currently, it is an anatomical location-based definition, which is not maintained in subtypes (functional specializations).</obo:IAO_0000116>
         <obo:IAO_0000115>A disease which has material basis in a neurological disorder and, when realized, the resultant pathological processes affect functioning of the nervous system.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.nlm.nih.gov/medlineplus/neurologicdiseases.html</obo:IAO_0000119>
-        <obo:IAO_0000118>nervous system disease</obo:IAO_0000118>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000118>nervous system disease</obo:IAO_0000118>
         <obo:IAO_0000111>neurological disease</obo:IAO_0000111>
         <oboInOwl:hasDbXref>http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12681</oboInOwl:hasDbXref>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
-        <obo:IAO_0000116>Neurological diseases affect the functioning of the nervous system and are caused by structural, biochemical, or electrical abnormalities in the brain, spinal cord, peripheral nerves, plexus or glia.
-
-There are varying etiologies and material bases for neurological diseases, resulting in various patholgies, all somewhat loosely associated by &quot;affecting&quot; the nervous system.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
     </Class>
     
@@ -1477,22 +2345,16 @@ MJ</rdfs:comment>
     <Class rdf:about="&obo;ND_0000036">
         <rdfs:label>relapsing multiple sclerosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;ND_0000033"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000054"/>
-                <someValuesFrom rdf:resource="&obo;ND_0000201"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000118>SPMS</obo:IAO_0000118>
-        <obo:IAO_0000118>relapsing remitting multiple sclerosis</obo:IAO_0000118>
-        <obo:IAO_0000115>A type of multiple sclerosis which presents clinically with an overall relapsing profile of neurological worsening, measured according to a disability scale, such as the Kurtze Expanded Disability Status Scale (EDSS). The most common variant of multiple sclerosis, which is characterized by acute relapses with a return to either non-worsening or declining neurological functioning, known as remission. During the relapsing remitting phase, remission can be at the same level of clinical functioning as before the relapse, or at lower level, but homeostasis is achieved. Whereas, during the secondary progressive phase, a gradual deterioration in functioning occurs between relapses. Sometimes acute exacerbations may dissapear altogether. It is hypothesized the start of the secondary progressive phase correlates to a particular threshold of accumulating permanent damage to axons or the lack of ability to remyelinate.</obo:IAO_0000115>
-        <obo:IAO_0000118>RRMS</obo:IAO_0000118>
         <obo:IAO_0000118>secondary progressive multiple sclerosis </obo:IAO_0000118>
+        <obo:IAO_0000118>SPMS</obo:IAO_0000118>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12518
 and
 http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12517</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000118>relapsing remitting multiple sclerosis</obo:IAO_0000118>
+        <obo:IAO_0000115>A type of multiple sclerosis which presents clinically with an overall relapsing profile of neurological worsening, measured according to a disability scale, such as the Kurtze Expanded Disability Status Scale (EDSS). The most common variant of multiple sclerosis, which is characterized by acute relapses with a return to either non-worsening or declining neurological functioning, known as remission. During the relapsing remitting phase, remission can be at the same level of clinical functioning as before the relapse, or at lower level, but homeostasis is achieved. Whereas, during the secondary progressive phase, a gradual deterioration in functioning occurs between relapses. Sometimes acute exacerbations may dissapear altogether. It is hypothesized the start of the secondary progressive phase correlates to a particular threshold of accumulating permanent damage to axons or the lack of ability to remyelinate.</obo:IAO_0000115>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000118>RRMS</obo:IAO_0000118>
         <obo:IAO_0000232 rdf:resource="&obo;IAO_0000123"/>
     </Class>
     
@@ -4609,6 +5471,12 @@ http://en.wikipedia.org/wiki/Amyloidosis
         <rdfs:subClassOf rdf:resource="&obo;ND_0006009"/>
         <rdfs:subClassOf>
             <Restriction>
+                <onProperty rdf:resource="&obo;BFO_0000055"/>
+                <someValuesFrom rdf:resource="&obo;ND_0000036"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
                 <onProperty rdf:resource="&obo;BFO_0000117"/>
                 <someValuesFrom>
                     <Class>
@@ -5537,7 +6405,25 @@ Perhaps the definition should be changed to: &quot;A diagnosis which indicates t
                             <rdf:Description rdf:about="&obo;OBI_0100026"/>
                             <Restriction>
                                 <onProperty rdf:resource="&obo;BFO_0000056"/>
-                                <someValuesFrom rdf:resource="&obo;ND_0006051"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;ND_0000201"/>
+                                            <Restriction>
+                                                <onProperty rdf:resource="&obo;BFO_0000117"/>
+                                                <someValuesFrom rdf:resource="&obo;ND_0006051"/>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&obo;BFO_0000158"/>
+                                <someValuesFrom rdf:resource="&obo;ND_0000036"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&obo;BFO_0000178"/>
+                                <someValuesFrom rdf:resource="&obo;ND_0005503"/>
                             </Restriction>
                         </intersectionOf>
                     </Class>
@@ -5564,10 +6450,18 @@ Perhaps the definition should be changed to: &quot;A diagnosis which indicates t
                 <someValuesFrom>
                     <Class>
                         <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                            <rdf:Description rdf:about="&obo;OGMS_0000087"/>
                             <Restriction>
                                 <onProperty rdf:resource="&obo;BFO_0000056"/>
                                 <someValuesFrom rdf:resource="&obo;ND_0000202"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&obo;BFO_0000158"/>
+                                <someValuesFrom rdf:resource="&obo;ND_0000032"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&obo;BFO_0000178"/>
+                                <someValuesFrom rdf:resource="&obo;ND_0005503"/>
                             </Restriction>
                         </intersectionOf>
                     </Class>
@@ -5595,10 +6489,28 @@ Perhaps the definition should be changed to: &quot;A diagnosis which indicates t
                 <someValuesFrom>
                     <Class>
                         <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                            <rdf:Description rdf:about="&obo;OGMS_0000087"/>
                             <Restriction>
                                 <onProperty rdf:resource="&obo;BFO_0000056"/>
-                                <someValuesFrom rdf:resource="&obo;ND_0006054"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;ND_0000201"/>
+                                            <Restriction>
+                                                <onProperty rdf:resource="&obo;BFO_0000117"/>
+                                                <someValuesFrom rdf:resource="&obo;ND_0006054"/>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&obo;BFO_0000158"/>
+                                <someValuesFrom rdf:resource="&obo;ND_0000036"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&obo;BFO_0000178"/>
+                                <someValuesFrom rdf:resource="&obo;ND_0005503"/>
                             </Restriction>
                         </intersectionOf>
                     </Class>
@@ -8708,7 +9620,7 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
     <!-- http://purl.obolibrary.org/obo/ND_0006052 -->
 
     <Class rdf:about="&obo;ND_0006052">
-        <rdfs:label>primary progressive multiple sclerosis process profile</rdfs:label>
+        <rdfs:label>primary progressive disease course part</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;ND_0006055"/>
         <rdfs:subClassOf>
             <Class>
@@ -8724,7 +9636,7 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
                 </intersectionOf>
             </Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A multiple sclerosis process profile which illustrates a steady decline in neurological functioning without relapse or remission.</obo:IAO_0000115>
+        <obo:IAO_0000115>A disease course part which is characterizerd by a steady decline in neurological functioning without relapse or remission.</obo:IAO_0000115>
         <obo:IAO_0000119>TO DO</obo:IAO_0000119>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
         <obo:IAO_0000116>Part of a solution when process profiles were considered. Most likely this class will be deleted. </obo:IAO_0000116>
@@ -8746,7 +9658,7 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
         </rdfs:subClassOf>
         <obo:IAO_0000116>characterizes the degree of deficit and overall worsening in neurological function (eg- muscle weakness or paralysis, optical disturbances, ambulation, etc.), inlcuding frequency of relapse and remisison, in a multiple sclerosis disease course measured according to a standardized scale such as the Kurtze Expanded Disability Status Scale (EDSS).</obo:IAO_0000116>
         <obo:IAO_0000119>TO DO</obo:IAO_0000119>
-        <obo:IAO_0000115>A disease course part of a relapsing multiple sclerosis disease course that is charaterized by a pattern of relpases in neurological functioning followed by periods of remission during which functioning does not decrease and is at a lower level of disabilty than that of the relapse.</obo:IAO_0000115>
+        <obo:IAO_0000115>A disease course part that is characterized by a pattern of relapses in neurological functioning followed by periods of remission during which functioning does not decrease and is at a lower level of disability than that of the relapse.</obo:IAO_0000115>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
         <obo:IAO_0000232 rdf:resource="&obo;IAO_0000123"/>
     </Class>
@@ -8757,17 +9669,21 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
 
     <Class rdf:about="&obo;ND_0006055">
         <rdfs:label>disease course part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000132"/>
-                <someValuesFrom rdf:resource="&obo;OGMS_0000063"/>
-            </Restriction>
-        </rdfs:subClassOf>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000063"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&obo;BFO_0000132"/>
+                        <someValuesFrom rdf:resource="&obo;OGMS_0000063"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
         <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000116>This class is a supposed to catpure both a stage of a disease course as well as its profile/pattern of progression. It&apos;s a temporary solution we offer until OGMS and BFO determine how to handle this.</obo:IAO_0000116>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
-        <obo:IAO_0000116>TO DO</obo:IAO_0000116>
-        <obo:IAO_0000115></obo:IAO_0000115>
+        <obo:IAO_0000115>A disease course that is characterized by a particular and identifiable pattern of progrerssion whcih is a temporal sub-part of a complete disease course. </obo:IAO_0000115>
         <obo:IAO_0000232 rdf:resource="&obo;IAO_0000123"/>
     </Class>
     
@@ -8794,18 +9710,6 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
     <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
 
     <rdf:Description rdf:about="&obo;OGMS_0000031">
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000052"/>
-                <someValuesFrom rdf:resource="&obo;OBI_0100026"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000113"/>
-                <someValuesFrom rdf:resource="&obo;OGMS_0000045"/>
-            </Restriction>
-        </rdfs:subClassOf>
         <disjointWith rdf:resource="&obo;ND#normal"/>
     </rdf:Description>
     
@@ -8847,12 +9751,6 @@ Alexander P. Cox</rdfs:comment>
 
     <rdf:Description rdf:about="&obo;OGMS_0000063">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000057"/>
-                <someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
                     <Restriction>
@@ -8865,6 +9763,12 @@ Alexander P. Cox</rdfs:comment>
                     </Restriction>
                 </intersectionOf>
             </Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&obo;BFO_0000057"/>
+                <someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+            </Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116>Why isn&apos;t &apos;disease course&apos; a subclass of &apos;bodily process&apos;?  There is currently no definition for &apos;bodily process&apos;, but perhaps it is intended to capture only those processes that occur in the body that are &quot;normal&quot; or &quot;non-diseased&quot;.  If this is the intended distinction, it will undoubtedly be very difficult to construct an acceptable definition that will even hold up in most cases.
 
@@ -10575,9 +11479,6 @@ Alexander P. Cox</obo:IAO_0000232>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_61908">
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000178">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_61907">
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
