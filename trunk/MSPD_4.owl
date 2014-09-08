@@ -1,0 +1,3434 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;MSPD#"
+     xml:base="&obo;MSPD"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="&obo;MSPD">
+        <owl:imports rdf:resource="&obo;obi.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000034"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="&obo;GO_0008150"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000032"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000416 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000416"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000001 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000001">
+        <rdfs:label>patient reported assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
+        <obo:IAO_0000115>An assay wherein a patient as the evaluant produces information about themselves, by answering direct questions or filling out forms.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000002 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000002">
+        <rdfs:label>self-appraisal assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000001"/>
+        <obo:IAO_0000115>A patient reported assay wherein the information produced is an appraisal of a functional ability or affective state, which cannot be externally verified at a satisfactory level of certainty.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000003 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000003">
+        <rdfs:label>fact-based assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000001"/>
+        <obo:IAO_0000115>A patient rexorted assay wherein the information produced is an externally verifiable fact.</obo:IAO_0000115>
+        <obo:IAO_0000116>E.g., date, age, insuance number, number of fractures, etc. As opposed to subjective measuresd such as feelings, weakness, limitations, etc.</obo:IAO_0000116>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000004 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000004">
+        <rdfs:label>judgement about function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;BFO_0000034"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A self-appraisal assay wherein a patient is asked to make a judgement about their functional abiltities, such as performing certain activities or with certain body parts or systems.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000005 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000005">
+        <rdfs:label>judgement about affect assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000056"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD/MSPD_0005001"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A self-appraisal assay wherein a patient is asked to make a judgement about their affective state, such as feelings or moods.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000006 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000006">
+        <rdfs:label>NYSMSC patient reported enrollment assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000007"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000013"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000017"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000019"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000029"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000116>It is an open question as to whether a collection of assays with no specified output above its constituent parts (sub-assays) also qualifies as an assay.</obo:IAO_0000116>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A patient reported assay wherein a patient answers questions on the NYSMSC enrollment form.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000007 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000007">
+        <rdfs:label>level of difficulty assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000008"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000009"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000010"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000011"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000116>These may not be proper assays, but rather realizations of planned objective specifications, or something similar. However, an argument can be made that they are indeed assays, the specified output of which is the collection of outputs of their parts. </obo:IAO_0000116>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000008 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000008">
+        <rdfs:label>difficulty of getting up assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002015"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates their difficulty getting up from a sitting or low position.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000009 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000009">
+        <rdfs:label>difficulty of climbing stairs assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002004"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates their difficulty climbing a flight of stairs.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000010 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000010">
+        <rdfs:label>difficulty of prolonged standing assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002016"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates their difficulty standing for a prolonged period of time.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000011 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000011">
+        <rdfs:label>difficulty of driving assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002014"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates their difficulty driving.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000012 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000012">
+        <rdfs:label>NYSMSC clinician reported enrollment assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000041"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000053"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000054"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000058"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician answers questions on the NYSMSC enrollment form.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000013 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000013">
+        <rdfs:label>pain judgement assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000013"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000015"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>These may not be proper assays, but rather realizations of planned objective specifications, or something similar. However, an argument can be made that they are indeed assays, the specified output of which is the collection of outputs of their parts. </obo:IAO_0000116>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000014 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000014">
+        <rdfs:label>experiencing pain assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient judges if they are experiencing pain or not.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000015 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000015">
+        <rdfs:label>pain rating assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient rates their level of pain.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000016 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000016">
+        <rdfs:label>NYSMSC enrollment form assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000006"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000012"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000017 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000017">
+        <rdfs:label>life satisfaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient rates satisifaction with their life in general.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000019 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000019">
+        <rdfs:label>limitation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000020"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000021"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000022"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000023"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000024"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000026"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000027"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0002018"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000116>These may not be proper assays, but rather realizations of planned objective specifications, or something similar. However, an argument can be made that they are indeed assays, the specified output of which is the collection of outputs of their parts. </obo:IAO_0000116>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000020 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000020">
+        <rdfs:label>right upper limb assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002003"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates limitation with their right upper limb.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000021 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000021">
+        <rdfs:label>left upper limb assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002011"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates limitation with their left upper limb.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000022 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000022">
+        <rdfs:label>right lower limb assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002012"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates limitation with their right lower limb.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000023 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000023">
+        <rdfs:label>left lower limb assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002013"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates limitation with their left lower limb.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000024 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000024">
+        <rdfs:label>bowel continence assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002017"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates limitation with their bowel continence.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000025 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000025">
+        <rdfs:label>bladder continence assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002018"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates limitation with their bladder continence.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000026 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000026">
+        <rdfs:label>fatigability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002019"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A self-appraisal assay wherein a patient rates limitation with their energy level.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000027 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000027">
+        <rdfs:label>vision limitation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002009"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000056"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0000027"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A judgement about function assay wherein a patient rates limitation with their visual functioning.</obo:IAO_0000115>
+        <obo:IAO_0000116>Produces an ordered categorical datum, 1-7 inclusive, indicating levels of limitation: &quot;no limitation&quot;, &quot;none to mild&quot;, &quot;mild&quot;, &quot;mild to moderate&quot;, &apos;moderate&quot;, &apos;moderate to severe&quot;, and &quot;severe&quot;.
+
+This datum essentially represents a judgement the patient makes about their visual functioning at the time of the assay.</obo:IAO_0000116>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000029 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000029">
+        <rdfs:label>feeling and mood assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000030"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000031"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000032"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000033"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000034"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000035"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000036"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A self appraisal assay wherein a patient is instructed to rate to what extent they are bothered by certain feelings or moods and which is part of the NYSMSC patient reported enrollment form assay.</obo:IAO_0000115>
+        <obo:IAO_0000116>These may not be proper assays, but rather realizations of planned objective specifications, or something similar. However, an argument can be made that they are indeed assays, the specified output of which is the collection of outputs of their parts. </obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000030 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000030">
+        <rdfs:label>lonesome isolated assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient rates how much they have been bothered or worried about feeling lonesome or isolated.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000031 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000031">
+        <rdfs:label>pessimistic assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient rates how much they have been bothered or worried about feeling pessimistic about the future.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000032 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000032">
+        <rdfs:label>uptight tense stressed assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient rates how much they have been bothered or worried about feeling uptight, tense or stressed.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000033 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000033">
+        <rdfs:label>panic attack assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient rates how much they have been bothered or worried about panic attacks.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000034 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000034">
+        <rdfs:label>irritated annoyed assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient rates how much they have been bothered or worried about feeling easily irritated or annoyed.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000035 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000035">
+        <rdfs:label>morbid gloomy assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient rates how much they have been bothered or worried about feeling morbid or having gloomy thoughts.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000036 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000036">
+        <rdfs:label>blame guilt assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A judgement about affect assay wherein a patient rates how much they have been bothered or worried about feeling quilt or blame.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000039 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000039">
+        <rdfs:label>clinician reported assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000070"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>An assay in which a clinician answers one or more questions about a patient. Can be filling out forms or resonding verbally and recorded by another person, often part of a clincial history taking and can include a physical examination or functional assessments. </obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000040 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000040">
+        <rdfs:label>rating of neurological functioning assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician assesses the realization of a neurolgical function of a patient in one or more domains.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000041 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000041">
+        <rdfs:label>functional scores and EDSS assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000042"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000043"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000044"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000045"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000046"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000047"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000048"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000049"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000050"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician rates seven functional systems of a patient, as well as other disease-related neurological findings, and detmermines their Kurtzke Expanded Disabilty Status Scale score. It is part of a NYSMSC clincian reported enrollment form.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000042 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000042">
+        <rdfs:label>EDSS pyramidal function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002001"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>motor functions, eg- walking</obo:IAO_0000116>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A functional rating assay wherein a clinician rates the pyramidal functioning of a patient.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000043 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000043">
+        <rdfs:label>EDSS cerebellar function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002005"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A functional rating assay wherein a clinician rates the cerebellar functioning of a patient.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000116>coordination</obo:IAO_0000116>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000044 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000044">
+        <rdfs:label>EDSS brain stem function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002006"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A functional rating assay wherein a clinician rates the brian stem functioning of a patient.</obo:IAO_0000115>
+        <obo:IAO_0000116>speech and swallowing</obo:IAO_0000116>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000045 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000045">
+        <rdfs:label>EDSS sensory function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002007"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000116>proprioception, touch, vibration and pain</obo:IAO_0000116>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A functional rating assay wherein a clinician rates the senosry functioning of a patient.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000046 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000046">
+        <rdfs:label>EDSS bowel and bladder function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002008"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A functional rating assay wherein a clinician rates the bowel and bladder functioning of a patient by asking them questions about continence, hesitancy or urgency.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000047 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000047">
+        <rdfs:label>EDSS visual function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002009"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A functional rating assay wherein a clinician rates the visual functioning of a patient.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000048 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000048">
+        <rdfs:label>EDSS cerebral function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002010"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A functional rating assay wherein a clinician rates the cerebral functioning of a patient.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000049 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000049">
+        <rdfs:label>EDSS other function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0003000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>Need to determine what the output datum is about in this case. The patient?</obo:IAO_0000116>
+        <obo:IAO_0000115>A functional rating assay wherein a clinician indicates the presence of MS-realted neurological findings of a patient that are not considered within the domain of the seven other functional scores.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000050 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000050">
+        <rdfs:label>Kurtzke EDSS assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;BFO_0000019"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A functional rating assay wherein a clinician determines the Kurtzke Expanded Disability Statuts Score for a patient.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000051 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000051">
+        <rdfs:label>MS diagnosis according to Poser criteria assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000938"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0004000"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician indicates whether a patient is diagnosed with clinically definite MS according to Poser criteria.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000052 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000052">
+        <rdfs:label>MS diagnosis according to McDonald criteria assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000938"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0004000"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician indicates whether a patient is diagnosed with clinically definite MS according to McDonald criteria.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000053 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000053">
+        <rdfs:label>disease status assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000051"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000052"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000062"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000063"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000064"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician answers questions 28 and 29 in the NYSMSC clinician reported enrollment form assay.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000054 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000054">
+        <rdfs:label>timed ambulation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000055"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000056"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000057"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000055 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000055">
+        <rdfs:label>time to walk 25 feet assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000054"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000416"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000056"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0000055"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician records the time in seconds it takes for a patient to walk 25 feet.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000056 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000056">
+        <rdfs:label>level of assistance in timed ambulation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0003000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0004000"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000054"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician indicates the level of assistance a patient has (no assistance, one person, two persons, or unable to perform) for the timed amulation assay. </obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000057 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000057">
+        <rdfs:label>patient using an ankle foot orthotic assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000938"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0004000"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000054"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician indicates whether a patient uses an ankle foot orthodic (AFO) during the timed ambulation assay.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000058 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000058">
+        <rdfs:label>9-hole peg test assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MSPD_0000059"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000060"/>
+                            <rdf:Description rdf:about="&obo;MSPD_0000061"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A clinician reported assay which is part of the NYSMSC clinician reported enrollment form assay and wherein a clinician instructs a patient to perform the 9-hole peg test, recording time for each hand and which is hand is dominate. </obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000059 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000059">
+        <rdfs:label>time for right hand in 9-hole peg test assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000416"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000056"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0000059"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000058"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician records records the time in seconds it takes for a patient to complete the 9-hole peg test with their right hand.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000060 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000060">
+        <rdfs:label>time for left hand in 9-hole peg test assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000058"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000416"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MSPD_0004000"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000056"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0000060"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician records records the time in seconds it takes for a patient to complete the 9-hole peg test with their left hand.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000061 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000061">
+        <rdfs:label>dominate hand assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000938"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0004000"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000058"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician indicates the dominate hand of a patient, or whether the patient was unable to perform the 9-hole peg test.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000062 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000062">
+        <rdfs:label>MS type assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000938"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0004000"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician </obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000063 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000063">
+        <rdfs:label>number of relapses previous year assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000032"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0004000"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician indicates the number of relapses a patient has had in the previous year. </obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0000064 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0000064">
+        <rdfs:label>currently exacerbating assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;MSPD_0000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000938"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;MSPD_0004000"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinician reported assay wherein a clinician indicates whether a patient is experiencing an exacerbation of symptoms at the time of visit.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0001000 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0001000">
+        <rdfs:label>cognitive representation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000020"/>
+        <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000116>This is a temporary class, will be replaced by import from the Mental Functioning Ontology.
+
+http://purl.obolibrary.org/obo/MF_0000031 </obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0001001 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0001001">
+        <rdfs:label>judgement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001000"/>
+        <obo:IAO_0000114>&apos;metadata incomplete&apos;</obo:IAO_0000114>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A cognitive representation sustained by an organism which is a result of an evaluation/assessment/decision process.  </obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0001002 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0001002">
+        <rdfs:label>judgement of impaired ability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0001001"/>
+        <obo:IAO_0000115>A judgement which is about an organism&apos;s own abilities and the extent to which they are imparied. </obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114>&apos;metadata incomplete&apos;</obo:IAO_0000114>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0001003 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0001003">
+        <rdfs:label>judgement about gross motor function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000004"/>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114>&apos;metadata incomplete&apos;</obo:IAO_0000114>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0001004 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0001004">
+        <rdfs:label>judgement about limb function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000004"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114>&apos;metadata incomplete&apos;</obo:IAO_0000114>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0001005 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0001005">
+        <rdfs:label>judgement about autonomic nervous system function assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0000004"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000114>&apos;metadata incomplete&apos;</obo:IAO_0000114>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0001006 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0001006">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <obo:IAO_0000114>&apos;metadata incomplete&apos;</obo:IAO_0000114>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002000 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002000">
+        <rdfs:label>neurological assessment function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
+        <obo:IAO_0000115>A function that is realized by virtue of the fact an organism has a nervous system, subparts and subsystems of which can be assessed for assessor-specified functioning via clinical exam and history taking.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002001 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002001">
+        <rdfs:label>pyramidal function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A neurological assessment function that is realized in the consciously directed gross motor activity of human. E.g., moving limbs, walking, etc. </obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002002 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002002">
+        <rdfs:label>gross motor function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A function that when realized results in coordinated gross motor activities, such as driving a car, throwing a ball, climbing stairs, walking, etc. </obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002003 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002003">
+        <rdfs:label>right upper limb function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A function that is realized in virute of the fact the bearer has a right upper limb.</obo:IAO_0000115>
+        <obo:IAO_0000116>Temporary class to be replaced by an import from ?.</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002004 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002004">
+        <rdfs:label>climbing stairs function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002002"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A gross motor function that when realized allows the bearer to climb stairs. </obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002005 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002005">
+        <rdfs:label>cerebellar function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A biological function that is realized by </obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002006 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002006">
+        <rdfs:label>brain stem function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A biological function that is realized by </obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002007 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002007">
+        <rdfs:label>sensory function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A biological function which is realized by virtue of the fact an organsim </obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002008 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002008">
+        <rdfs:label>bowel and bladder function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002000"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A neurological assessment function which is realized by virtue of the fact an organsim has bowel and bladder subsystems which can be assessed for continence, urgency, and hesitation.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002009 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002009">
+        <rdfs:label>visual function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A biological function which is realized by virtue of the fact an organsim has a visual system.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002010 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002010">
+        <rdfs:label>cerebral function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A biological function that is realized by </obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002011 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002011">
+        <rdfs:label>left upper limb function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000115>A function that is realized in virute of the fact the bearer has a left upper limb.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002012 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002012">
+        <rdfs:label>right lower limb function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A function that is realized in virute of the fact the bearer has a right lower limb.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002013 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002013">
+        <rdfs:label>left lower limb function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A function that is realized in virute of the fact the bearer has a left lower limb.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002014 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002014">
+        <rdfs:label>driving function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002002"/>
+        <obo:IAO_0000115>A gross motor function that when realized allows the bearer to drive a motorized vehicle.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002015 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002015">
+        <rdfs:label>standing up function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002002"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000116>This defintion is weak. What &apos;low positin&apos; means needs to specified.</obo:IAO_0000116>
+        <obo:IAO_0000115>A gross motor function that when realized allows the bearer to stand up from a position closer to the ground than midline. </obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002016 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002016">
+        <rdfs:label>prolonged standing function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002002"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000116>In excess of 30 minutes.</obo:IAO_0000116>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A gross motor function that when realized allows the bearer to remain standing for prolonged periods of time. </obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002017 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002017">
+        <rdfs:label>bowel continence function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000115>A function that is realized in virute of the fact the bearer has lower intestines.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000116>Need to further specify defintion to capture notion of continence. </obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002018 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002018">
+        <rdfs:label>bladder continence function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD/MSPD_0002020"/>
+        <obo:IAO_0000116>Need to further specify defintion to capture notion of continence. </obo:IAO_0000116>
+        <obo:IAO_0000115>A function that is realized in virute of the fact the bearer has a bladder.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002019 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002019">
+        <rdfs:label>fatigue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <obo:IAO_0000115>A subjective feeling of tiredness characterized by a lack of energy and motivation.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/HP_0012378</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000423"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002023 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002023">
+        <rdfs:label>impaired visual functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the visual system functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002024 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002024">
+        <rdfs:label>impaired sensory functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the sensory functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002025 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002025">
+        <rdfs:label>impaired proprioception conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002024"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the proprioceptive functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002026 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002026">
+        <rdfs:label>impaired motor functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A conclusion which represents the assertion that the motor functioning of a patient is impaired.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002027 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002027">
+        <rdfs:label>impaired pyramidal tract functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A conclusion that the pyramidal tract functioning of a patient is impaired.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002028 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002028">
+        <rdfs:label>impaired cerebellar functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002026"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the cerebellar functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002029 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002029">
+        <rdfs:label>limited lower limb function conclusion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MSPD_0002048"/>
+                    <rdf:Description rdf:about="&obo;MSPD_0002051"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002043"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the lower limb functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002030 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002030">
+        <rdfs:label>limitation in upper limb conclusion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MSPD_0002049"/>
+                    <rdf:Description rdf:about="&obo;MSPD_0002050"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002043"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the upper limb functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002031 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002031">
+        <rdfs:label>limited left limb function conclusion </rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MSPD_0002048"/>
+                    <rdf:Description rdf:about="&obo;MSPD_0002049"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002043"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the left limb functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002032 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002032">
+        <rdfs:label>limitation in right limb conclusion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MSPD_0002050"/>
+                    <rdf:Description rdf:about="&obo;MSPD_0002051"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002043"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the right limb functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002033 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002033">
+        <rdfs:label>impaired brain stem functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002042"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that brain stem functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002035 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002035">
+        <rdfs:label>impaired cerebral functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the cerebral functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002036 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002036">
+        <rdfs:label>limited bowel function conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002042"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the bowle functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002037 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002037">
+        <rdfs:label>limited bladder function conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002042"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the bladder functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002038 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002038">
+        <rdfs:label>experiencing pain conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002045"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that XXX of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002039 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002039">
+        <rdfs:label>impaired walking conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002026"/>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the walking function of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002040 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002040">
+        <rdfs:label>difficulty driving conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A conclusion that a patient is experiencing difficulty driving.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002041 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002041">
+        <rdfs:label>impaired bowel or bladder functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002042"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which is either a bowel or bladder functioning finding.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002042 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002042">
+        <rdfs:label>impaired autonomic nervous system functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the autonomic nervous system functioning of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002043 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002043">
+        <rdfs:label>limitation with limb conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A conclusion that represents the assertion  the function of a limb of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002044 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002044">
+        <rdfs:label>difficulty climbing stairs conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A conclusion which represents the assertion that a patient has difficulty climbing stairs.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002045 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002045">
+        <rdfs:label>bothered by affective process conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A conclusion that a patient is bothered by one or more moods or feelings.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002046 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002046">
+        <rdfs:label>difficulty standing conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the standing function of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002047 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002047">
+        <rdfs:label>impaired cerebellar motor functioning conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>TO DO</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002048 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002048">
+        <rdfs:label>limited left lower limb function conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002043"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the left lower limb function of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002049 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002049">
+        <rdfs:label>limited left upper limb function conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002043"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the left upper limb function of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002050 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002050">
+        <rdfs:label>limitation in right upper limb conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002043"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the right upper limb function of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002051 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002051">
+        <rdfs:label>limitation in right lower limb conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002043"/>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that the right lower function of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002052 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002052">
+        <rdfs:label>conclusion from patient reported data</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A conclusion based on patient reported data.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002053 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002053">
+        <rdfs:label>conclusion from clinician reported data</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002066"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A conclusion based on clinician reported data.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002054 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002054">
+        <rdfs:label>difficulty getting up conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A conclusion which represents the assertion that a patient has difficulty getting up from a low position.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002055 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002055">
+        <rdfs:label>limited by fatigue conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A conclusion which represents the assertion that a patient is limited by fatigue.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002056 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002056">
+        <rdfs:label>limited vision conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A conclusion which represents the assertion that a patient&apos;s vison is impaired.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002057 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002057">
+        <rdfs:label>bothered by lonesome or isolated feelings conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002045"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that XXX of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002058 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002058">
+        <rdfs:label>bothered by pessimism about future conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002045"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that XXX of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002059 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002059">
+        <rdfs:label>bothered by stress conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002045"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that XXX of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002060 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002060">
+        <rdfs:label>bothered by panic conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002045"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that XXX of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002061 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002061">
+        <rdfs:label>easily irritated or annoyed conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002045"/>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that XXX of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002062 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002062">
+        <rdfs:label>bothered by morbid or gloomy thoughts conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002045"/>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that XXX of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002063 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002063">
+        <rdfs:label>bothered by blame or guilt conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MSPD_0002045"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that XXX of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002064 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002064">
+        <rdfs:label>limited life satisfaction conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001909"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0002065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinical finding which represents the assertion that XXX of a patient is impaired to some extent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002065 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002065">
+        <rdfs:label>patient reported measurement datum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0000001"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A categorical measurement datum that is ordered and has no uniform intervals between categories.</obo:IAO_0000115>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0002066 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0002066">
+        <rdfs:label>clinician reported measurement datum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0000039"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A categorical measurement datum that is ordered and has no uniform intervals between categories.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0003000 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0003000">
+        <rdfs:label>ordered categorical measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000938"/>
+        <obo:IAO_0000115>A categorical measurement datum that is ordered and has no uniform intervals between categories.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000116>This class should be refined and then proposed to be included in OBI.</obo:IAO_0000116>
+        <obo:IAO_0000116>TO DO: add an axiom for the ordered part of the value specification.</obo:IAO_0000116>
+        <obo:IAO_0000116>Examples are finishing positions in a race such as &apos;1&apos;, &apos;2&apos;, &apos;3&apos; or &apos;first&apos;, &apos;second&apos;, &apos;third&apos;; economic groups such as &apos;low&apos;, &apos;middle&apos;, &apos;high&apos;; disability ratings such as &apos;mild&apos;, &apos;moderate&apos;, &apos;severe&apos;; and so on. </obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD_0004000 -->
+
+    <owl:Class rdf:about="&obo;MSPD_0004000">
+        <rdfs:label>patient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000116>Need to import OGMS &apos;extneded organsim&apos; and ?? &apos;patient&apos; role.</obo:IAO_0000116>
+        <obo:IAO_0000116>This is a constructed class. 
+
+Equivalent To (&apos;extended organism&apos; and has_role some patient))</obo:IAO_0000116>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>An extended organsim that bears the patient role in the relevant context.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000070"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000938"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001909 -->
+
+    <owl:Class rdf:about="&obo;OBI_0001909"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD/MSPD_0002020 -->
+
+    <owl:Class rdf:about="&obo;MSPD/MSPD_0002020">
+        <rdfs:label>biological function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD/MSPD_0002021 -->
+
+    <owl:Class rdf:about="&obo;MSPD/MSPD_0002021">
+        <rdfs:label>coordination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/PATO_0000188</obo:IAO_0000119>
+        <obo:IAO_0000115>A behavioral quality inhering in a bearer by virtue of the bearer&apos;s having or lacking skillful and effective interaction of movement.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000423"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD/MSPD_0002034 -->
+
+    <owl:Class rdf:about="&obo;MSPD/MSPD_0002034">
+        <rdfs:label>socially aquired function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
+        <obo:IAO_0000119>TO DO</obo:IAO_0000119>
+        <obo:IAO_0000115>A function which is acquired through social interation of an organism with peer members of its species such that once obtained and organsim can be said to be functionally capable of realizing said function given the right cicumstances, and if the function is lost, then a physical change must have occurred.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000116>A capability or skill, an artifactual funciton that is intentioanlly acquired, even if the organism that acquires it does not agree to acquisition. Eg- driving a car, operating a keyboard, pounding a hammer, and so on. </obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MSPD/MSPD_0005001 -->
+
+    <owl:Class rdf:about="&obo;MSPD/MSPD_0005001">
+        <rdfs:label>affective process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;MSPD_0004000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>To be imported from the Emotion Ontology.</obo:IAO_0000116>
+        <obo:IAO_0000115>An affective process is any process that has positive or negative valence.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/MFOEM_000195</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000423"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
