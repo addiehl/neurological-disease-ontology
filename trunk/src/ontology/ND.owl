@@ -45,7 +45,7 @@ There is a google group for discussing the ND project found at https://groups.go
 
 If you are interested in participating in the development of ND, please send an email to addiehl_at_buffalo.edu.</rdfs:comment>
         <dc:description xml:lang="en">The Neurological Disease Ontology (ND) provides a set of logically connected classes that represent the range of neurological diseases and their associated signs and symptoms, assessments, diagnoses, and interventions encountered in the course of clinical practice. ND is built as an extension of the Ontology for General Medical Sciences (OGMS). Classes in ND utilize both textual and axiomatized definitions that describe and formalize the relations between classes within the ontology itself as well as to classes in external ontologies.</dc:description>
-        <imports rdf:resource="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl"/>
+        <imports rdf:resource="&obo;ogms.owl"/>
         <imports rdf:resource="&obo;ND/external/FMA_import.owl"/>
         <imports rdf:resource="&obo;ND/external/OBI_import.owl"/>
         <imports rdf:resource="&obo;ND/external/PR_import.owl"/>
@@ -309,6 +309,14 @@ If you are interested in participating in the development of ND, please send an 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000121 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000121">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000127 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000127">
@@ -333,17 +341,17 @@ If you are interested in participating in the development of ND, please send an 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000158 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000139 -->
 
-    <rdf:Description rdf:about="&obo;BFO_0000158">
+    <rdf:Description rdf:about="&obo;BFO_0000139">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000167 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000158 -->
 
-    <rdf:Description rdf:about="&obo;BFO_0000167">
+    <rdf:Description rdf:about="&obo;BFO_0000158">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     
@@ -389,14 +397,14 @@ Alternatively, if syndromes are process profiles, then:
 (&apos;disease d&apos; results in &apos;syndrome s&apos;)
 is a shortcut for:
 ((&apos;disease d&apos; realized in &apos;disease course c&apos;) and (&apos;disease course c&apos; has profile &apos;syndrome s&apos;))</obo:IAO_0000116>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000118>results_in</obo:IAO_0000118>
         <obo:IAO_0000115>‘disease’ D &apos;results in&apos; ‘syndrome’ S =def
 
-D &apos;is realized by&apos; ‘disease course’ C
+(D &apos;is realized by&apos; ‘disease course’ C)
 and (C &apos;has specific dependent at some time&apos; S) 
 and (C &apos;has participant&apos; ‘organism’ O) 
 and (O &apos;is bearer of&apos; (D and S))</obo:IAO_0000115>
-        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
-        <obo:IAO_0000118>results_in</obo:IAO_0000118>
         <inverseOf rdf:resource="&obo;ND_0004001"/>
         <rdfs:domain rdf:resource="&obo;OGMS_0000031"/>
         <rdfs:range rdf:resource="&obo;OGMS_0000086"/>
@@ -424,14 +432,6 @@ is a shortcut for:
         <rdfs:range rdf:resource="&obo;OGMS_0000031"/>
         <rdfs:domain rdf:resource="&obo;OGMS_0000086"/>
     </ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
-
-    <rdf:Description rdf:about="&obo;OBI_0000299">
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
     
 
 
@@ -653,14 +653,14 @@ is a shortcut for:
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
     </Class>
     <Axiom>
-        <annotatedTarget>cerebral infarction</annotatedTarget>
-        <obo:IAO_0000116>The relationship of &apos;cerebral infarction&apos; to &apos;ischemic stroke&apos; is unknown.</obo:IAO_0000116>
+        <obo:IAO_0000116>The relationship of &apos;cerebral ischemia&apos; to &apos;ischemic stroke&apos; is unknown.</obo:IAO_0000116>
+        <annotatedTarget>cerebral ischemia</annotatedTarget>
         <annotatedSource rdf:resource="http://purl.obolibrary.obo/obo/ND_0008002"/>
         <annotatedProperty rdf:resource="&obo;IAO_0000118"/>
     </Axiom>
     <Axiom>
-        <annotatedTarget>cerebral ischemia</annotatedTarget>
-        <obo:IAO_0000116>The relationship of &apos;cerebral ischemia&apos; to &apos;ischemic stroke&apos; is unknown.</obo:IAO_0000116>
+        <obo:IAO_0000116>The relationship of &apos;cerebral infarction&apos; to &apos;ischemic stroke&apos; is unknown.</obo:IAO_0000116>
+        <annotatedTarget>cerebral infarction</annotatedTarget>
         <annotatedSource rdf:resource="http://purl.obolibrary.obo/obo/ND_0008002"/>
         <annotatedProperty rdf:resource="&obo;IAO_0000118"/>
     </Axiom>
@@ -863,14 +863,14 @@ is a shortcut for:
         <obo:IAO_0000117>Donat Sule</obo:IAO_0000117>
     </Class>
     <Axiom>
-        <annotatedTarget>ruptured saccular aneurysm</annotatedTarget>
         <obo:IAO_0000116> from Ropper/Brown; Pinciples of Neurology. 8th ed- look over</obo:IAO_0000116>
+        <annotatedTarget>ruptured saccular aneurysm</annotatedTarget>
         <annotatedSource rdf:resource="http://purl.obolibrary.obo/obo/ND_0008020"/>
         <annotatedProperty rdf:resource="&obo;IAO_0000118"/>
     </Axiom>
     <Axiom>
-        <annotatedTarget>spontaneous subarachnoid hemorrhage</annotatedTarget>
         <obo:IAO_0000116> from Ropper/Brown; Pinciples of Neurology. 8th ed- look over</obo:IAO_0000116>
+        <annotatedTarget>spontaneous subarachnoid hemorrhage</annotatedTarget>
         <annotatedSource rdf:resource="http://purl.obolibrary.obo/obo/ND_0008020"/>
         <annotatedProperty rdf:resource="&obo;IAO_0000118"/>
     </Axiom>
@@ -1517,19 +1517,19 @@ is a shortcut for:
 
     <!-- http://purl.obolibrary.org/obo/FMA_242789 -->
 
-    <rdf:Description rdf:about="&obo;FMA_242789">
+    <Class rdf:about="&obo;FMA_242789">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000028"/>
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
-    </rdf:Description>
+    </Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_256237 -->
 
-    <rdf:Description rdf:about="&obo;FMA_256237">
+    <Class rdf:about="&obo;FMA_256237">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
-    </rdf:Description>
+    </Class>
     
 
 
@@ -1559,19 +1559,19 @@ is a shortcut for:
 
     <!-- http://purl.obolibrary.org/obo/FMA_67112 -->
 
-    <rdf:Description rdf:about="&obo;FMA_67112">
+    <Class rdf:about="&obo;FMA_67112">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000141"/>
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
-    </rdf:Description>
+    </Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_67165 -->
 
-    <rdf:Description rdf:about="&obo;FMA_67165">
+    <Class rdf:about="&obo;FMA_67165">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
-    </rdf:Description>
+    </Class>
     
 
 
@@ -1637,14 +1637,14 @@ is a shortcut for:
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000031"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000052"/>
-                <someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+                <onProperty rdf:resource="&obo;BFO_0000113"/>
+                <someValuesFrom rdf:resource="&obo;ND_0005501"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000113"/>
-                <someValuesFrom rdf:resource="&obo;ND_0005501"/>
+                <onProperty rdf:resource="&obo;BFO_0000052"/>
+                <someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116>MJ: Neurological diseases affect the functioning of the nervous system and are caused by structural, biochemical, or electrical abnormalities in the brain, spinal cord, peripheral nerves, plexus or glia.
@@ -1865,10 +1865,6 @@ Eg- A neurological disease which results in [produces] dementia syndrome.
             <Class>
                 <intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;ND_0000180"/>
-                    <Restriction>
-                        <onProperty rdf:resource="&obo;BFO_0000057"/>
-                        <someValuesFrom rdf:resource="&obo;ND_0005038"/>
-                    </Restriction>
                     <Restriction>
                         <onProperty rdf:resource="&obo;ND_0004000"/>
                         <someValuesFrom rdf:resource="&obo;ND_0003000"/>
@@ -3575,9 +3571,9 @@ From: http://en.wikipedia.org/wiki/Epilepsy#Classification</rdfs:comment>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;ND_0000001"/>
         <obo:IAO_0000119>http://neurolex.org/wiki/Category:Neurodegenerative_disease</obo:IAO_0000119>
-        <obo:IAO_0000115>A neurological disease that is characterized by the atrophy or death of neurons or related structures progressively affecting the functioning of the nervous system.</obo:IAO_0000115>
         <obo:IAO_0000115>Hereditary and sporadic conditions which are characterized by progressive nervous system dysfunction. These disorders are often associated with atrophy of the affected central or peripheral nervous system structures.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2086</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A neurological disease that is characterized by atrophy or death of neurons or related structures progressively affecting the functioning of the nervous system.</obo:IAO_0000115>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
     </Class>
     
@@ -3758,9 +3754,15 @@ Forms of motor neuron disease include:
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;ND_0000119"/>
         <obo:IAO_0000118>Lou Gehrigs disease</obo:IAO_0000118>
-        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis</obo:IAO_0000119>
+        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
         <obo:IAO_0000115>A degenerative disorder affecting upper MOTOR NEURONS in the brain and lower motor neurons in the brain stem and SPINAL CORD. Disease onset is usually after the age of 50 and the process is usually fatal within 3 to 6 years. Clinical manifestations include progressive weakness, atrophy, FASCICULATION, hyperreflexia, DYSARTHRIA, dysphagia, and eventual paralysis of respiratory function. Pathologic features include the replacement of motor neurons with fibrous ASTROCYTES and atrophy of anterior SPINAL NERVE ROOTS and corticospinal tracts.</obo:IAO_0000115>
+        <obo:IAO_0000232>See the following link for information on subtypes/variants of ALS:http://www.alshopefoundation.org/understanding-als/types-of-als.php
+Also see the following for an alternative terms:
+http://www.alsa.org/about-als/forms-of-als.html
+
+-COX
+11/21/13</obo:IAO_0000232>
         <obo:IAO_0000118>Lou Gehrig&apos;s disease</obo:IAO_0000118>
         <obo:IAO_0000118>ALS</obo:IAO_0000118>
         <obo:IAO_0000119>http://neurolex.org/wiki/Category:Amyotrophic_Lateral_Sclerosis</obo:IAO_0000119>
@@ -4689,10 +4691,6 @@ Confirm that this is a disease and not just a syndrome.</rdfs:comment>
                 <intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;ND_0000180"/>
                     <Restriction>
-                        <onProperty rdf:resource="&obo;BFO_0000057"/>
-                        <someValuesFrom rdf:resource="&obo;ND_0005039"/>
-                    </Restriction>
-                    <Restriction>
                         <onProperty rdf:resource="&obo;ND_0004000"/>
                         <someValuesFrom rdf:resource="&obo;ND_0003000"/>
                     </Restriction>
@@ -5070,7 +5068,7 @@ Some of the other signs are poor eyelid function, contracture of the facial musc
     <!-- http://purl.obolibrary.org/obo/ND_0000173 -->
 
     <Class rdf:about="&obo;ND_0000173">
-        <rdfs:label>vascular disease resulting in dementia</rdfs:label>
+        <rdfs:label>vascular neurological disease resulting in dementia</rdfs:label>
         <equivalentClass>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
@@ -5086,7 +5084,7 @@ Some of the other signs are poor eyelid function, contracture of the facial musc
                 </intersectionOf>
             </Class>
         </equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;ND_0000006"/>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0000181"/>
         <obo:IAO_0000115>Vascular dementia is a neurological disease where cognitive deficits [memory, visual spatial, attention, orientation, executive function, functional] occur that represent a decline from previous levels of functioning resulting in dementia caused by ischemia.</obo:IAO_0000115>
         <obo:IAO_0000115> imprecise term referring to dementia associated with CEREBROVASCULAR DISORDERS, including CEREBRAL INFARCTION (single or multiple), and conditions associated with chronic BRAIN ISCHEMIA. Diffuse, cortical, and subcortical subtypes have been described.
 </obo:IAO_0000115>
@@ -5391,15 +5389,17 @@ Perhaps your concern is that the current textual definition stipulates that the 
             </Class>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;ND_0000113"/>
-        <obo:IAO_0000232>Is this term unique to neurological diseases?  According to the following wikipedia entry, amyloidosis can occur in other organs such as the heart.  Does this pose a problem for our classification schema?
-
-http://en.wikipedia.org/wiki/Amyloidosis
-
-&quot;In medicine, amyloidosis refers to a variety of conditions wherein amyloid proteins are abnormally deposited in organs or tissues and cause harm. A protein is described as being amyloid if, due to an alteration in its secondary structure, it takes on a particular aggregated insoluble form, similar to the beta-pleated sheet. Symptoms vary widely depending upon where in the body amyloid deposits accumulate. Amyloidosis may be inherited or acquired.&quot;</obo:IAO_0000232>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
         <obo:IAO_0000115>Amyloidopathy is a neurological disease that results in the degeneration of populations of nerve cells due to the formation of extracellular amyloid plaques.
 
 *** NEEDS REVIEW ***</obo:IAO_0000115>
+        <obo:IAO_0000232>Is this term unique to neurological diseases?  According to the following wikipedia entry, amyloidosis can occur in other organs such as the heart.  Does this pose a problem for our classification schema?
+
+http://en.wikipedia.org/wiki/Amyloidosis
+
+&quot;In medicine, amyloidosis refers to a variety of conditions wherein amyloid proteins are abnormally deposited in organs or tissues and cause harm. A protein is described as being amyloid if, due to an alteration in its secondary structure, it takes on a particular aggregated insoluble form, similar to the beta-pleated sheet. Symptoms vary widely depending upon where in the body amyloid deposits accumulate. Amyloidosis may be inherited or acquired.&quot;
+
+UPDATE [01/14/2014]: Discussions about this issue have led to the proposal that &apos;amyloidopathy&apos; be retained as a neurological disease specific term while &apos;amyloidosis&apos; (which amyloidopathy is a subclass of) should be used as a general term for diseases that involve abnormal deposition of amyloid in any region of the body. A compelling reason for this decision is that the term &apos;amyloid&apos; is historically applied loosely in the medical literature. For example, at least 24 proteins have been identified as constituents in amyloids and, in most cases, amyloid is not the primary protein constituent.</obo:IAO_0000232>
     </Class>
     
 
@@ -5470,22 +5470,37 @@ http://en.wikipedia.org/wiki/Amyloidosis
         <rdfs:label>relapsing multiple sclerosis disease course</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;ND_0006009"/>
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000055"/>
-                <someValuesFrom rdf:resource="&obo;ND_0000036"/>
-            </Restriction>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&obo;BFO_0000121"/>
+                        <someValuesFrom>
+                            <Class>
+                                <unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;ND_0006051"/>
+                                    <rdf:Description rdf:about="&obo;ND_0006054"/>
+                                </unionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&obo;BFO_0000121"/>
+                        <allValuesFrom>
+                            <Class>
+                                <unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;ND_0006051"/>
+                                    <rdf:Description rdf:about="&obo;ND_0006054"/>
+                                </unionOf>
+                            </Class>
+                        </allValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000117"/>
-                <someValuesFrom>
-                    <Class>
-                        <unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;ND_0006051"/>
-                            <rdf:Description rdf:about="&obo;ND_0006054"/>
-                        </unionOf>
-                    </Class>
-                </someValuesFrom>
+                <onProperty rdf:resource="&obo;BFO_0000055"/>
+                <someValuesFrom rdf:resource="&obo;ND_0000036"/>
             </Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>TO DO</obo:IAO_0000119>
@@ -7629,6 +7644,11 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
 
 *** TEMPLATE FOR SYNDROME DEFINITIONS??? ***</obo:IAO_0000115>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000116>I think this is incorrect. First it should be defined wrt its parent. I don&apos;t think the parent of &quot;dementia syndrome&quot; will turn out to be &quot;MCI syndrome&quot;. Admittedly that will depend on the specifics to the aggreed upon definitions. Currently they are both in need or refinement.
+Second, the definition is too Alzheimer-centric, and I believe would rule out other instances of dementia. Dementia does not typically result from a &quot;dementia disease&quot;. Even if true, whatever “typical” means, that assertion is informative, not explanatory — i.e., it belongs in an elucidation not the definition.  
+
+Mark Jensen</obo:IAO_0000116>
     </Class>
     
 
@@ -7677,7 +7697,18 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000086"/>
         <obo:IAO_0000115>Mild cognitive impairment is the occurence of one or more cognitive deficits [visual spatial, attention, orientation, executive function, functional] that are beyond those expected based on the age and education of the individual, but which are not significant enough to interfere with their daily activities.  It is typically the result of _________ .</obo:IAO_0000115>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000116>Suggest removing &apos;mild&apos; from label. Dementia is not a type of mild cognitive impairment. A syndrome of cognitive impairment makes more sense and tracks far better with reality. 
+
+A diagnosis of MCI can be non-pathological, ie- normal ageing related cognitive decline.
+
+Mark Jensen</obo:IAO_0000116>
+        <obo:IAO_0000116>Remove last sentence of defintion. &quot;Typically&quot; doesn&apos;t ontologize well. Nor do fill-in-the-blanks ;-)
+
+Mark Jensen
+</obo:IAO_0000116>
+        <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
         <obo:IAO_0000118>MCI</obo:IAO_0000118>
+        <obo:IAO_0000232 rdf:resource="&obo;IAO_0000428"/>
     </Class>
     
 
@@ -7707,7 +7738,12 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ND_0003007 -->
 
     <Class rdf:about="&obo;ND_0003007">
-        <rdfs:subClassOf rdf:resource="&obo;ND_0003006"/>
+        <rdfs:label>sporadic amyotrophic lateral sclerosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0000120"/>
+        <obo:IAO_0000118>sporadic ALS</obo:IAO_0000118>
+        <obo:IAO_0000119>See: http://www.alshopefoundation.org/understanding-als/types-of-als.php</obo:IAO_0000119>
+        <obo:IAO_0000115>ALS without family history</obo:IAO_0000115>
+        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
     </Class>
     
 
@@ -7715,7 +7751,12 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ND_0003008 -->
 
     <Class rdf:about="&obo;ND_0003008">
-        <rdfs:subClassOf rdf:resource="&obo;ND_0003006"/>
+        <rdfs:label>familial amyotrophic lateral sclerosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0000120"/>
+        <obo:IAO_0000118>familial ALS</obo:IAO_0000118>
+        <obo:IAO_0000115>Familial ALS cases comprise 5 to 10 percent of all cases of ALS. Familial ALS (FALS) is inherited as an autosomal dominant trait. Almost 20 % of people with FALS have damage (called a mutation) in the gene that codes for the protein Cu/Zn superoxide dismutase (SOD 1) located on chromosome 21. There are no differences between familial and sporadic ALS on neurological exam except for occasional sensory loss in people with FALS. Other genes that, when damaged, can lead to ALS, have been identified on chromosomes 2, 9, 15, 18 and the X chromosome.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000119>See: http://www.alshopefoundation.org/understanding-als/types-of-als.php</obo:IAO_0000119>
     </Class>
     
 
@@ -7723,7 +7764,13 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ND_0003009 -->
 
     <Class rdf:about="&obo;ND_0003009">
-        <rdfs:subClassOf rdf:resource="&obo;ND_0003006"/>
+        <rdfs:label>western pacific amyotrophic lateral sclerosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0000120"/>
+        <obo:IAO_0000115>Western Pacific ALS occurs primarily on the island of Guam, the Kii Peninsula of Japan, and New Guinea. The people on Guam have the same clinical characteristics seen in sporadic ALS and also can have a dementia and Parkinsons like illness. The illness on Guam is the first to be tied to a toxin, the cycad nut. This nut contains a compound that is toxic to nerve cells called BMAA and is similar to glutamate. The nut is eaten by the fruit bat which was a delicacy among the Chamorro population of Guam. This allowed a very high concentration of the toxin to be eaten and it has been postulated but not proven, that this caused the disease. The fruit bat was eaten to extinction and now fruit bats for consumption are imported, the disease has all but disappeared!</obo:IAO_0000115>
+        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000118>Guamanian</obo:IAO_0000118>
+        <obo:IAO_0000118>western pacific ALS</obo:IAO_0000118>
+        <obo:IAO_0000119>See: http://www.alshopefoundation.org/understanding-als/types-of-als.php</obo:IAO_0000119>
     </Class>
     
 
@@ -7731,7 +7778,12 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ND_0003010 -->
 
     <Class rdf:about="&obo;ND_0003010">
-        <rdfs:subClassOf rdf:resource="&obo;ND_0003006"/>
+        <rdfs:label>juvenile amyotrophic lateral sclerosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0000120"/>
+        <obo:IAO_0000115>Rare cases of adolescent motor neuron disease that are clinically indistinguishable from ALS have been reported. Onset is between ages twelve and sixteen. Although ALS can occur at young ages, these cases are probably different from sporadic ALS.</obo:IAO_0000115>
+        <obo:IAO_0000119>See: http://www.alshopefoundation.org/understanding-als/types-of-als.php</obo:IAO_0000119>
+        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000118>juvenile ALS</obo:IAO_0000118>
     </Class>
     
 
@@ -7739,7 +7791,11 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ND_0003011 -->
 
     <Class rdf:about="&obo;ND_0003011">
-        <rdfs:subClassOf rdf:resource="&obo;ND_0003006"/>
+        <rdfs:label>hiramaya disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0000120"/>
+        <obo:IAO_0000119>See: http://www.alshopefoundation.org/understanding-als/types-of-als.php</obo:IAO_0000119>
+        <obo:IAO_0000115>This is a rare disorder seem in young men. In this variant there is localized atrophy of one arm associated with increased reflexes implicating the presence of upper and lower motor neuron damage. However, the disorder is a problem at the junction between the cervical spine and the skull where there is pressure on the cervical spinal cord. In order to detect it, MRI of the neck needs to be performed in different positions including neck flexion and extension.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
     </Class>
     
 
@@ -7747,7 +7803,16 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ND_0003012 -->
 
     <Class rdf:about="&obo;ND_0003012">
-        <rdfs:subClassOf rdf:resource="&obo;ND_0003006"/>
+        <rdfs:label>autosomal recessive juvenile Parkinson disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0000139"/>
+        <obo:IAO_0000118>juvenile Parkinsonism</obo:IAO_0000118>
+        <obo:IAO_0000118>early onset Parkinson disease</obo:IAO_0000118>
+        <obo:IAO_0000118>PDJ</obo:IAO_0000118>
+        <obo:IAO_0000118>JP</obo:IAO_0000118>
+        <obo:IAO_0000118>PARK2</obo:IAO_0000118>
+        <obo:IAO_0000118>Parkinson disease 2</obo:IAO_0000118>
+        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000118>autosomal recessive juvenile Parkinsonism</obo:IAO_0000118>
     </Class>
     
 
@@ -7755,7 +7820,12 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ND_0003013 -->
 
     <Class rdf:about="&obo;ND_0003013">
-        <rdfs:subClassOf rdf:resource="&obo;ND_0003006"/>
+        <rdfs:label>presymptomatic disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
+        <obo:IAO_0000118>presymptomatic disease</obo:IAO_0000118>
+        <obo:IAO_0000115>The portion of a disease course that occurs before symptoms (in the generic sense of the term) present.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
     </Class>
     
 
@@ -7763,7 +7833,12 @@ http://sig.uw.edu/fma#Central_part_of_somatic_nervous_system</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ND_0003014 -->
 
     <Class rdf:about="&obo;ND_0003014">
-        <rdfs:subClassOf rdf:resource="&obo;ND_0003006"/>
+        <rdfs:label>symptomatic disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
+        <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000118>symptomatic disease</obo:IAO_0000118>
+        <obo:IAO_0000115>The portion of a disease course that occurs after symptoms (in the generic sense of the term) present.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
     </Class>
     
 
@@ -8476,20 +8551,19 @@ Alexander P. Cox</obo:IAO_0000232>
         <equivalentClass>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;ND_0005511"/>
+                    <rdf:Description rdf:about="&obo;ND_0005504"/>
                     <Restriction>
                         <onProperty rdf:resource="&obo;BFO_0000110"/>
-                        <someValuesFrom rdf:resource="&obo;ND_0005016"/>
+                        <someValuesFrom rdf:resource="&obo;PR_000004168"/>
                     </Restriction>
                 </intersectionOf>
             </Class>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;ND_0005504"/>
-        <obo:IAO_0000115>An amyloid plaque is an extracellular aggregation of amyloid beta protein fragments that develops in the brain.</obo:IAO_0000115>
+        <obo:IAO_0000115>An amyloid plaque is an extracellular protein aggregate that develops in the brain and is composed primarily of amyloid beta A4 protein.</obo:IAO_0000115>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
         <obo:IAO_0000118>amyloid plaque</obo:IAO_0000118>
         <obo:IAO_0000118>beta-amyloid plaque</obo:IAO_0000118>
-        <rdfs:comment>*** Should this term exist or is it synonymous with &apos;amyloid plaque&apos;? ***</rdfs:comment>
         <obo:IAO_0000118>senile plaque</obo:IAO_0000118>
     </Class>
     
@@ -8559,9 +8633,10 @@ From: http://en.wikipedia.org/wiki/Protein</rdfs:comment>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;ND_0005511"/>
         <obo:IAO_0000118>tau tangle</obo:IAO_0000118>
-        <obo:IAO_0000119>Alexander P. Cox</obo:IAO_0000119>
+        <obo:IAO_0000118>paired helical filaments</obo:IAO_0000118>
         <obo:IAO_0000115>Neurofibrillary tangle is an intracellular aggregation of tau proteins that develop in neurons in the brain.  The development of neurofibrillary tangles typically results in the disruption of the transportation of nutrients and other important substances within the neuron, which typically results in the destruction and death of the cell.</obo:IAO_0000115>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000118>tangle</obo:IAO_0000118>
         <obo:IAO_0000118>NFT</obo:IAO_0000118>
         <rdfs:comment>Neurofibrillary Tangles (NFTs) are aggregates of hyperphosphorylated tau protein that are most commonly known as a primary marker of Alzheimer&apos;s Disease. Their presence is also found in numerous other diseases known as Tauopathies. Little is known about their exact relationship to the different pathologies.
 
@@ -8569,6 +8644,8 @@ Neurofibrillary tangles are formed by hyperphosphorylation of a microtubule-asso
 
 From:
 http://en.wikipedia.org/wiki/Neurofibrillary_tangles</rdfs:comment>
+        <obo:IAO_0000118>PHF</obo:IAO_0000118>
+        <obo:IAO_0000119>Alexander P. Cox</obo:IAO_0000119>
     </Class>
     
 
@@ -8596,10 +8673,12 @@ http://en.wikipedia.org/wiki/Neurofibrillary_tangles</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/ND_0005504 -->
 
     <Class rdf:about="&obo;ND_0005504">
-        <rdfs:label>amyloid plaque</rdfs:label>
+        <rdfs:label>amyloid aggregate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;ND_0005511"/>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
-        <obo:IAO_0000115>An amyloid plaque is an extracellular aggregation of amyloid protein fragments that develops in the brain.</obo:IAO_0000115>
+        <obo:IAO_0000115>An amyloid aggregate is a typically extracellular aggregation of amyloid fibrils.
+
+TO DO: Revise</obo:IAO_0000115>
         <rdfs:comment>Pathogenesis of amyloidosis:
 
 When a native cell creates a protein, it could either make the actual protein or protein fragments. These fragments could come and join together to form the actual protein. Such a protein can sometimes regress into the protein fragments. This process of &quot;flip flopping&quot; happens frequently in certain proteins, especially the ones that cause this disease.
@@ -8613,6 +8692,7 @@ http://en.wikipedia.org/wiki/Amyloidosis
 
 Also see:
 http://en.wikipedia.org/wiki/Amyloid</rdfs:comment>
+        <obo:IAO_0000118>amyloid</obo:IAO_0000118>
     </Class>
     
 
@@ -8704,7 +8784,7 @@ It is believed that Lewy bodies represent an aggresome response in the cell.</ob
     <!-- http://purl.obolibrary.org/obo/ND_0005509 -->
 
     <Class rdf:about="&obo;ND_0005509">
-        <rdfs:label>filamentous inclusion made of the protein alpha synuclein</rdfs:label>
+        <rdfs:label>alpha synuclein aggregate</rdfs:label>
         <equivalentClass>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
@@ -8718,6 +8798,9 @@ It is believed that Lewy bodies represent an aggresome response in the cell.</ob
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;ND_0005511"/>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
+        <obo:IAO_0000232>This should probably be a subclass of &apos;amyloid aggregate&apos;
+
+-APC</obo:IAO_0000232>
         <obo:IAO_0000118>filamentous inclusion made of the protein alpha-synuclein</obo:IAO_0000118>
     </Class>
     
@@ -8731,7 +8814,7 @@ It is believed that Lewy bodies represent an aggresome response in the cell.</ob
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Aggresome
 
 *** REVIEW THIS SOURCE FOR ACCURACY ***</obo:IAO_0000119>
-        <obo:IAO_0000116>This is a place holder until PR takes over this term.</obo:IAO_0000116>
+        <obo:IAO_0000232>TO DO: import this term from GO</obo:IAO_0000232>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
         <oboInOwl:hasDbXref>http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=GO:0016235</oboInOwl:hasDbXref>
         <obo:IAO_0000115>An aggresome is a proteinaceous inclusion body that forms when cellular degradation machinery is impaired or overwhelmed, leading to an accumulation of protein for disposal. An aggresome is formed as the result of an aggresomal response.
@@ -8750,7 +8833,7 @@ Certain cellular inclusions seen in human disease are thought to represent an ag
 
     <Class rdf:about="&obo;ND_0005511">
         <rdfs:label>protein aggregate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="&obo;BFO_0000127"/>
@@ -8769,7 +8852,7 @@ Certain cellular inclusions seen in human disease are thought to represent an ag
 -MJ</obo:IAO_0000116>
         <obo:IAO_0000116>This term label assumes that all protein aggregates are pathological in nature.  A review of the literature supports this interpretation; however, it is still an open question wether there are some nonpathological protein aggregates.  If this is the case, then this lable should be changed to &apos;pathological protein aggregate&apos; and another class should be created labled &apos;protein aggregate&apos; that is not a subclass of &apos;disorder&apos;.</obo:IAO_0000116>
         <obo:IAO_0000119>http://groups.molbiosci.northwestern.edu/holmgren/Glossary/Definitions/Def-P/protein_aggregate.html</obo:IAO_0000119>
-        <obo:IAO_0000115>A protein aggregate is a misfolded, rigid protein grouping.</obo:IAO_0000115>
+        <obo:IAO_0000115>A protein aggregate is a grouping of misfolded proteins that is often rigid and insoluble.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000423"/>
     </Class>
     
@@ -8782,6 +8865,7 @@ Certain cellular inclusions seen in human disease are thought to represent an ag
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
         <obo:IAO_0000115>Neurodegeneration is a pathological bodily process that produces the loss of structure or function of neurons and can also produce the death of neurons.</obo:IAO_0000115>
+        <rdfs:comment>Source?</rdfs:comment>
     </Class>
     
 
@@ -8844,19 +8928,14 @@ Certain cellular inclusions seen in human disease are thought to represent an ag
         <equivalentClass>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;ND_0006006"/>
+                    <rdf:Description rdf:about="&obo;OGMS_0000061"/>
                     <Restriction>
                         <onProperty rdf:resource="&obo;BFO_0000057"/>
                         <someValuesFrom rdf:resource="&obo;ND_0005018"/>
                     </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <someValuesFrom rdf:resource="&obo;ND_0005510"/>
-                    </Restriction>
                 </intersectionOf>
             </Class>
         </equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;ND_0006006"/>
         <obo:IAO_0000232>Are &apos;pathological aggresomal response&apos; and &apos;protein aggregation&apos; the same process?  If not, what differentiates them?  Is &apos;protein aggregation&apos; a subclass of &apos;pathological aggresomal response&apos; as I have currently asserted?  If so, what other types of &apos;pathological aggresomal response&apos; are there?  If not, why not?
 
 
@@ -8890,10 +8969,6 @@ Source: http://www.aapsj.org/view.asp?art=aapsj080366</rdfs:comment>
                         <onProperty rdf:resource="&obo;BFO_0000057"/>
                         <someValuesFrom rdf:resource="&obo;ND_0005019"/>
                     </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <someValuesFrom rdf:resource="&obo;ND_0005502"/>
-                    </Restriction>
                 </intersectionOf>
             </Class>
         </equivalentClass>
@@ -8916,10 +8991,6 @@ Source: http://www.aapsj.org/view.asp?art=aapsj080366</rdfs:comment>
                     <Restriction>
                         <onProperty rdf:resource="&obo;BFO_0000057"/>
                         <someValuesFrom rdf:resource="&obo;ND_0005016"/>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <someValuesFrom rdf:resource="&obo;ND_0005500"/>
                     </Restriction>
                 </intersectionOf>
             </Class>
@@ -9013,19 +9084,15 @@ Revise definition and add disease courses for each of the subclasses of Alzheime
                 </intersectionOf>
             </Class>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Class>
-                <unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;ND_0000201"/>
-                    <rdf:Description rdf:about="&obo;ND_0000202"/>
-                </unionOf>
-            </Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000116>This may belong under OGMS &apos;progressive disease course&apos;. It is unlcear at this time how to make sense of the distinctions between OGMS disease courses. All realizations of MS, even the replapsing variant, are considerd progressive at some level of granularity (REF).</obo:IAO_0000116>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
         <obo:IAO_0000119>TO DO</obo:IAO_0000119>
         <obo:IAO_0000115>A disease course which realizes multiple sclerosis.</obo:IAO_0000115>
-        <obo:IAO_0000116>All instances of a mutliple sclerosis disease course contain a process profile (relapsing remitting, secondary progressive or primary progressive) which characterizes the degree of neurological functioning of the organism that bears the disease.</obo:IAO_0000116>
+        <obo:IAO_0000116>This may belong under OGMS &apos;progressive disease course&apos;. It is unlcear at this time how to make sense of the distinctions between OGMS disease courses. All realizations of MS, even the replapsing variant, are considerd progressive at some level of granularity.</obo:IAO_0000116>
+        <obo:IAO_0000116>One way to solve the problem of defining MS variants is with process profiles.
+
+As instance of a mutliple sclerosis disease course contains an instance of a process profile (relapsing remitting, secondary progressive or primary progressive) which characterizes the degree of neurological functioning of the organism that bears the disease.
+
+A class has been created to represent temporal parts of disease courses. However, the solution is still under development.</obo:IAO_0000116>
         <obo:IAO_0000232 rdf:resource="&obo;IAO_0000123"/>
     </Class>
     
@@ -9079,16 +9146,13 @@ Alexander P. Cox</obo:IAO_0000115>
     <Class rdf:about="&obo;ND_0006016">
         <rdfs:label>dysmyelination</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
-        <rdfs:comment>The leukodystrophies are caused by imperfect growth or development of the myelin sheath, the fatty covering that acts as an insulator around nerve fibers. Myelin, from which the white matter of the brain takes its colour, is a complex substance made up of at least ten different chemicals. Each of the leukodystrophies is the result of a defect in the gene that controls the production or metabolism of one (and only one) of the component molecules of myelin. [Wikipedia]
-
-Note:
-I do not know yet if dysmelination is a universal process kind or just a defined class to capture a set of processes that marks a distinction between abnormal development of myelin vs. normal development and subsequent decay (demyelination). </rdfs:comment>
+        <rdfs:comment>The leukodystrophies are caused by imperfect growth or development of the myelin sheath, the fatty covering that acts as an insulator around nerve fibers. Myelin, from which the white matter of the brain takes its colour, is a complex substance made up of at least ten different chemicals. Each of the leukodystrophies is the result of a defect in the gene that controls the production or metabolism of one (and only one) of the component molecules of myelin. [Wikipedia]</rdfs:comment>
         <rdfs:comment>A generic term that will probably be replaced by the more correct term leukodystrophy, that is used for a variety of congenital white matter diseases in which myelin is never formed correctly or is not maintained due to some sort of enzymatic defect.
 
 From:
 http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseases.aspx</rdfs:comment>
-        <obo:IAO_0000115>A patholigical process that results in imperfect growth or maintence of white matter in an organism&apos;s brain. </obo:IAO_0000115>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
+        <obo:IAO_0000115>A pathological process that results in abnormal growth or maintence of white matter in an organism&apos;s brain.</obo:IAO_0000115>
     </Class>
     
 
@@ -9099,9 +9163,9 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
         <rdfs:label>autoimmune process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
         <obo:IAO_0000119>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Autoimmune_Process</obo:IAO_0000119>
+        <obo:IAO_0000116>Not sure about this.</obo:IAO_0000116>
         <obo:IAO_0000115>A specific humoral or cell-mediated immune response against autologous (self) antigens. An autoimmune process may produce or be caused by autoimmune disease and may be developmentally complex, not necessarily pathological, and possibly pervasive.</obo:IAO_0000115>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
-        <rdfs:comment>Not sure about this.</rdfs:comment>
     </Class>
     
 
@@ -9211,9 +9275,8 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000094"/>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
-        <obo:IAO_0000115>An acute disease course that realizes vascular disease and results in dementia.
-
-***Expand on this!</obo:IAO_0000115>
+        <obo:IAO_0000116>Expand on this.</obo:IAO_0000116>
+        <obo:IAO_0000115>An acute disease course that realizes vascular disease resulting in dementia.</obo:IAO_0000115>
     </Class>
     
 
@@ -9566,6 +9629,10 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000065"/>
         <obo:IAO_0000115>A progressive disease course that realizes a neurological disease that involves degeneration of neurons in the brain.</obo:IAO_0000115>
+        <rdfs:comment>Mark J:
+This defintion needs fixing. Makes no sense to say &quot;involves&quot;. What is that? And why the complicated axiom and equivalency here?
+
+Why not simply: &quot;A disease course that realizes a neurodegenerative disease&quot;?</rdfs:comment>
         <obo:IAO_0000117>Alexander P. Cox</obo:IAO_0000117>
     </Class>
     
@@ -9583,10 +9650,6 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
                         <onProperty rdf:resource="&obo;BFO_0000057"/>
                         <someValuesFrom rdf:resource="&obo;ND_0005023"/>
                     </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <someValuesFrom rdf:resource="&obo;ND_0005509"/>
-                    </Restriction>
                 </intersectionOf>
             </Class>
         </equivalentClass>
@@ -9601,15 +9664,23 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
     <!-- http://purl.obolibrary.org/obo/ND_0006051 -->
 
     <Class rdf:about="&obo;ND_0006051">
-        <rdfs:label>secondary progressive disease course part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;ND_0006055"/>
+        <rdfs:label>secondary progressive disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0006009"/>
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000132"/>
-                <someValuesFrom rdf:resource="&obo;ND_0000201"/>
-            </Restriction>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&obo;BFO_0000139"/>
+                        <someValuesFrom rdf:resource="&obo;ND_0000201"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&obo;BFO_0000139"/>
+                        <allValuesFrom rdf:resource="&obo;ND_0000201"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A disease course part of a relapsing multiple sclerosis disease course that is charaterized by a pattern of: (1) relpases in neurological functioning followed by periods of remission during which functioning decreases but is at a lower level of disabilty than that of the relapse, or (2) a steady decline in neurological functioning is measured with no relapses.</obo:IAO_0000115>
+        <obo:IAO_0000115>A multiple sclerosis disease course that is a temporal part of a relapsing multiple sclerosis disease course and is charaterized by a pattern of impairment in neurological functioning followed by periods of remission during which functioning continues to decrease but is at a lower level of disabilty than that of the relapse. </obo:IAO_0000115>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
         <obo:IAO_0000119>TO DO</obo:IAO_0000119>
         <obo:IAO_0000232 rdf:resource="&obo;IAO_0000123"/>
@@ -9620,8 +9691,8 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
     <!-- http://purl.obolibrary.org/obo/ND_0006052 -->
 
     <Class rdf:about="&obo;ND_0006052">
-        <rdfs:label>primary progressive disease course part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;ND_0006055"/>
+        <rdfs:label>primary progressive disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0006009"/>
         <rdfs:subClassOf>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
@@ -9648,8 +9719,8 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
     <!-- http://purl.obolibrary.org/obo/ND_0006054 -->
 
     <Class rdf:about="&obo;ND_0006054">
-        <rdfs:label>relapsing remitting disease course part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;ND_0006055"/>
+        <rdfs:label>relapsing remitting disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ND_0006009"/>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="&obo;BFO_0000132"/>
@@ -9672,18 +9743,25 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
         <equivalentClass>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OGMS_0000063"/>
                     <Restriction>
-                        <onProperty rdf:resource="&obo;BFO_0000132"/>
+                        <onProperty rdf:resource="&obo;BFO_0000139"/>
                         <someValuesFrom rdf:resource="&obo;OGMS_0000063"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&obo;BFO_0000139"/>
+                        <allValuesFrom rdf:resource="&obo;OGMS_0000063"/>
                     </Restriction>
                 </intersectionOf>
             </Class>
         </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
         <obo:IAO_0000119>TO DO</obo:IAO_0000119>
-        <obo:IAO_0000116>This class is a supposed to catpure both a stage of a disease course as well as its profile/pattern of progression. It&apos;s a temporary solution we offer until OGMS and BFO determine how to handle this.</obo:IAO_0000116>
+        <obo:IAO_0000115>A disease course that is a proper temporal part of a disease course.</obo:IAO_0000115>
         <obo:IAO_0000117>Mark Jensen</obo:IAO_0000117>
-        <obo:IAO_0000115>A disease course that is characterized by a particular and identifiable pattern of progrerssion whcih is a temporal sub-part of a complete disease course. </obo:IAO_0000115>
+        <obo:IAO_0000116>In the case of MS, the pattern (or profile) of progression of neurological impairment is a defining clinical feature. However, it is not clear how to represent this. 
+
+Development of this class is at an early stage and is not yet ready for implementation. The goal is to represent stages of a disease course, such as early, late, relapsing, remission, and so forth. An acute phase can be seen as a stage in a larger diseae course. The current OGMS representaition for disease courses, stages and parts, is not adequate. Or, at least, it is not adequately explained.</obo:IAO_0000116>
+        <obo:IAO_0000118>disease stage</obo:IAO_0000118>
         <obo:IAO_0000232 rdf:resource="&obo;IAO_0000123"/>
     </Class>
     
@@ -9720,14 +9798,14 @@ http://www.medcyclopaedia.com/library/topics/volume_vi_1/d/dysmyelinating_diseas
     <rdf:Description rdf:about="&obo;OGMS_0000045">
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000127"/>
-                <someValuesFrom rdf:resource="&obo;OGMS_0000031"/>
+                <onProperty rdf:resource="&obo;BFO_0000171"/>
+                <someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="&obo;BFO_0000171"/>
-                <someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+                <onProperty rdf:resource="&obo;BFO_0000127"/>
+                <someValuesFrom rdf:resource="&obo;OGMS_0000031"/>
             </Restriction>
         </rdfs:subClassOf>
         <disjointWith rdf:resource="&obo;ND#normal"/>
@@ -9793,27 +9871,7 @@ APC</obo:IAO_0000116>
                             </Restriction>
                             <Restriction>
                                 <onProperty rdf:resource="&obo;BFO_0000158"/>
-                                <someValuesFrom>
-                                    <Class>
-                                        <intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&obo;OGMS_0000031"/>
-                                            <Restriction>
-                                                <onProperty rdf:resource="&obo;BFO_0000055"/>
-                                                <someValuesFrom>
-                                                    <Class>
-                                                        <intersectionOf rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="&obo;OGMS_0000063"/>
-                                                            <Restriction>
-                                                                <onProperty rdf:resource="&obo;BFO_0000167"/>
-                                                                <someValuesFrom rdf:resource="&obo;OBI_0100026"/>
-                                                            </Restriction>
-                                                        </intersectionOf>
-                                                    </Class>
-                                                </someValuesFrom>
-                                            </Restriction>
-                                        </intersectionOf>
-                                    </Class>
-                                </someValuesFrom>
+                                <someValuesFrom rdf:resource="&obo;OGMS_0000031"/>
                             </Restriction>
                         </intersectionOf>
                     </Class>
@@ -9847,6 +9905,14 @@ Alexander P. Cox</rdfs:comment>
     <Class rdf:about="&obo;PR_000000001">
         <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
     </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000004168 -->
+
+    <rdf:Description rdf:about="&obo;PR_000004168">
+        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
+    </rdf:Description>
     
 
 
@@ -10078,11 +10144,11 @@ Alexander P. Cox</obo:IAO_0000232>
     <rdf:Description rdf:about="&obo;BFO_0000035">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000034">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_72822">
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000034">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_62407">
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
@@ -10136,6 +10202,9 @@ Alexander P. Cox</obo:IAO_0000232>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_62215">
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;OBI_0000299">
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_77458">
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
@@ -11730,9 +11799,6 @@ Alexander P. Cox</obo:IAO_0000232>
     <rdf:Description rdf:about="&obo;BFO_0000138">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000139">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000136">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
@@ -11858,6 +11924,9 @@ Alexander P. Cox</obo:IAO_0000232>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000168">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000167">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000162">
@@ -12007,9 +12076,6 @@ Alexander P. Cox</obo:IAO_0000232>
     <rdf:Description rdf:about="&obo;BFO_0000124">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000121">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_77108">
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
     </rdf:Description>
@@ -12135,7 +12201,9 @@ Alexander P. Cox</obo:IAO_0000232>
         <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo/2012-07-20/Reference"/>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo/2012-07-20/ReleaseNotes"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo/2014-05-03/ReleaseNotes"/>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo/dev/bfo.clif"/>
+        <rdfs:seeAlso rdf:resource="&obo;bfo/dev/owl"/>
         <foaf:mbox rdf:resource="mailto:bfo-owl-devel@googlegroups.com"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_54617">
@@ -12916,9 +12984,6 @@ Alexander P. Cox</obo:IAO_0000232>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_70681">
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;PR_000004168">
-        <obo:IAO_0000412 rdf:resource="&obo;pr.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_256212">
         <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
