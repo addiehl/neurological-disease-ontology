@@ -1,0 +1,20 @@
+id: nd
+title: "Neurological Disease Ontology"
+github_org: patrick-lloyd-ray
+git_main_branch: main
+repo: neurological-disease-ontology
+release_artefacts: 
+  - base
+  - full
+  - simple
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  products: 
+    - id: bfo
+    - id: ogms
+    - id: ro
+robot_java_args: '-Xmx16G'

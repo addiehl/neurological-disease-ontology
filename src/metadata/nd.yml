@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/nd
+
+idspace: ND
+base_url: /obo/nd
+
+products:
+- nd.owl: https://raw.githubusercontent.com/patrick-lloyd-ray/neurological-disease-ontology/main/nd.owl
+- nd.obo: https://raw.githubusercontent.com/patrick-lloyd-ray/neurological-disease-ontology/main/nd.obo
+
+term_browser: ontobee
+example_terms:
+- ND_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/patrick-lloyd-ray/neurological-disease-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/patrick-lloyd-ray/neurological-disease-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ND?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/patrick-lloyd-ray/neurological-disease-ontology/main/
