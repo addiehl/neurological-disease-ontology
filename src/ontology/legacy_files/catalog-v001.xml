@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1657747869158" name="http://purl.obolibrary.org/obo/MSPD" uri="MSPD_4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1657747869158" name="http://purl.obolibrary.org/obo/ND" uri="ND.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1657747869158" name="http://purl.obolibrary.org/obo/ND/external/PR_import.owl" uri="PR_import_v2.2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1657747869158" name="http://purl.obolibrary.org/obo/nd/external/FMA_import.owl" uri="FMA_Import_v2.5.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1657747869158" name="http://purl.obolibrary.org/obo/nd/external/UBERON_import.owl" uri="UBERON_Import_v1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1657747869158" name="http://purl.obolibrary.org/obo/obi.owl" uri="OBI_import_v2.8.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1657747869158" name="http://purl.obolibrary.org/obo/vo/external/RO_import.owl" uri="RO_import.owl"/>
+    </group>
+</catalog>
