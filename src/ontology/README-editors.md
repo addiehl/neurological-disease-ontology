@@ -24,7 +24,7 @@ The editors version is [nd-edit.owl](nd-edit.owl)
 
 [../../nd.owl](../../nd.owl) is the release version
 
-To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/patrick-lloyd-ray/neurological-disease-ontology) for details.
+To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/addiehl/neurological-disease-ontology) for details.
 
 You should discuss the git workflow you should use with the maintainer
 of this repo, who should document it here. If you are the maintainer,
@@ -114,8 +114,8 @@ Finally type:
 
 IMMEDIATELY AFTERWARDS (do *not* make further modifications) go here:
 
- * https://github.com/patrick-lloyd-ray/neurological-disease-ontology/releases
- * https://github.com/patrick-lloyd-ray/neurological-disease-ontology/releases/new
+ * https://github.com/addiehl/neurological-disease-ontology/releases
+ * https://github.com/addiehl/neurological-disease-ontology/releases/new
 
 __IMPORTANT__: The value of the "Tag version" field MUST be
 
@@ -147,11 +147,11 @@ For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
 # Travis Continuous Integration System
 
-Check the build status here: [![Build Status](https://travis-ci.org/patrick-lloyd-ray/neurological-disease-ontology.svg?branch=master)](https://travis-ci.org/patrick-lloyd-ray/neurological-disease-ontology)
+Check the build status here: [![Build Status](https://travis-ci.org/addiehl/neurological-disease-ontology.svg?branch=master)](https://travis-ci.org/addiehl/neurological-disease-ontology)
 
 Note: if you have only just created this project you will need to authorize travis for this repo.
 
- 1. Go to [https://travis-ci.org/profile/patrick-lloyd-ray](https://travis-ci.org/profile/patrick-lloyd-ray)
+ 1. Go to [https://travis-ci.org/profile/addiehl](https://travis-ci.org/profile/addiehl)
  2. click the "Sync account" button
  3. Click the tick symbol next to neurological-disease-ontology
 

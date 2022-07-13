@@ -1,5 +1,5 @@
 
-![Build Status](https://github.com/patrick-lloyd-ray/neurological-disease-ontology/workflows/CI/badge.svg)
+![Build Status](https://github.com/addiehl/neurological-disease-ontology/workflows/CI/badge.svg)
 # Neurological Disease Ontology
 
 Description: None
@@ -22,7 +22,7 @@ Editors of this ontology should use the edit version, [src/ontology/nd-edit.owl]
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/patrick-lloyd-ray/neurological-disease-ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/addiehl/neurological-disease-ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 

@@ -3,10 +3,10 @@ layout: ontology_detail
 id: nd
 title: Neurological Disease Ontology
 jobs:
-  - id: https://travis-ci.org/patrick-lloyd-ray/neurological-disease-ontology
+  - id: https://travis-ci.org/addiehl/neurological-disease-ontology
     type: travis-ci
 build:
-  checkout: git clone https://github.com/patrick-lloyd-ray/neurological-disease-ontology.git
+  checkout: git clone https://github.com/addiehl/neurological-disease-ontology.git
   system: git
   path: "."
 contact:
@@ -15,7 +15,7 @@ contact:
   github: 
 description: Neurological Disease Ontology is an ontology...
 domain: stuff
-homepage: https://github.com/patrick-lloyd-ray/neurological-disease-ontology
+homepage: https://github.com/addiehl/neurological-disease-ontology
 products:
   - id: nd.owl
     name: "Neurological Disease Ontology main release in OWL format"
@@ -34,7 +34,7 @@ dependencies:
 - id: ogms
 - id: ro
 
-tracker: https://github.com/patrick-lloyd-ray/neurological-disease-ontology/issues
+tracker: https://github.com/addiehl/neurological-disease-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
