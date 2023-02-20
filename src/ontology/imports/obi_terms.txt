@@ -1,0 +1,12 @@
+OBI:0100026 ## organism
+OBI:0000093 ## patient role
+OBI:0000202 ## investigation agent role
+OBI:0000272 ## protocol
+OBI:0500000 ## study design
+OBI:0000339 ## planning
+OBI:0000338 ## drawing a conclusion based on data
+OBI:0000066 ## investigation
+OBI:0001909 ## conclusion based on data
+OBI:0000011 ## planned process
+OBI:0000116 ## worker role
+OBI:0000207 ## health care provider role
