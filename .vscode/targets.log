@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Sat Feb 18 00:34:06 2023
+# Make data base, printed on Mon Feb 20 22:41:47 2023
 
 # Variables
 
@@ -48,7 +48,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Sp8XvhNp1w/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.II1S2qGNwI/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -68,7 +68,7 @@ MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /De
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/patrick.ray/Library/Application Support/Code/CachedData/e2816fe719a4026ffa1ee0189dc89bdfdbafb164
+VSCODE_CODE_CACHE_PATH = /Users/patrick.ray/Library/Application Support/Code/CachedData/441438abd1ac652551dbe4d408dfcec8a499b8bf
 # environment
 LOGNAME = patrick.ray
 # environment
@@ -88,7 +88,7 @@ MAKECMDGOALS := all
 # environment
 SHLVL = 2
 # environment
-LOCAL_GIT_DIRECTORY = /private/var/folders/34/38mrr2hj5m99n5tqy6_r3rj40000gp/T/AppTranslocation/3BE12CA3-85A6-4C4D-AB62-345074FDF88A/d/GitHub Desktop.app/Contents/Resources/app/git
+LOCAL_GIT_DIRECTORY = /private/var/folders/34/38mrr2hj5m99n5tqy6_r3rj40000gp/T/AppTranslocation/EE46FD3F-A7DA-470D-8222-E2A56A8D60BE/d/GitHub Desktop.app/Contents/Resources/app/git
 # environment
 RUBY_ROOT = /Users/patrick.ray/.rubies/ruby-3.1.2
 # default
@@ -110,7 +110,7 @@ TMPDIR = /var/folders/34/38mrr2hj5m99n5tqy6_r3rj40000gp/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/patrick.ray/Library/Application Support/Code/1.75.0-main.sock
+VSCODE_IPC_HOOK = /Users/patrick.ray/Library/Application Support/Code/1.75.1-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -120,7 +120,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.50902037.50902043.7CEA5232-CED3-454C-A18E-D7C0A407B746
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.52551724.52551731.B5EC2882-900C-4E5A-ACDE-23DB57F7B113
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -148,7 +148,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 57603
+VSCODE_PID = 4970
 # variable set hash-table stats:
 # Load=69/1024=7%, Rehash=0, Collisions=2/90=2%
 
@@ -158,7 +158,7 @@ VSCODE_PID = 57603
 
 # Directories
 
-# . (device 16777222, inode 29066187): 27 files, no impossibilities.
+# . (device 16777221, inode 29066187): 27 files, no impossibilities.
 
 # 27 files, no impossibilities in 1 directories.
 
@@ -232,7 +232,7 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sat Feb 18 00:34:06 2023
+# Finished Make data base on Mon Feb 20 22:41:47 2023
 
  
 make: *** No rule to make target `all'.  Stop.

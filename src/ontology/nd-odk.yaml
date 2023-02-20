@@ -13,8 +13,9 @@ export_formats:
   - obo
   - json
 import_group:
-  products: 
-    - id: bfo
+  products:
+    - id: bfo 
+    - id: obi
     - id: ogms
     - id: ro
 robot_java_args: '-Xmx16G'
