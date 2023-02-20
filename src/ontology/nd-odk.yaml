@@ -17,5 +17,6 @@ import_group:
     - id: bfo 
     - id: obi
     - id: ogms
+    - id: pr
     - id: ro
 robot_java_args: '-Xmx16G'

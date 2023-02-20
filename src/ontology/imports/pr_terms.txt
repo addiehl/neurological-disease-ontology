@@ -1,0 +1,26 @@
+PR:000021935 ## immature protein part
+PR:000021937 ## initiator methionine
+PR:000018263 ## amino acid chain
+PR:000000001 ## protein
+PR:000004168 ## amyloid beta A4 protein
+PR:000005907 ## alpha-crystallin A chain
+PR:000005908 ## alpha-crystallin B chain
+PR:000005909 ## beta-crystallin A2
+PR:000005910 ## beta-crystallin A4
+PR:000005911 ## beta-crystallin B1
+PR:000005912 ## beta-crystallin B2
+PR:000005913 ## beta-crystallin B3
+PR:000005919 ## beta-crystallin S
+PR:000011118 ## neurofilament heavy polypeptide
+PR:000011119 ## neurofilament light polypeptide
+PR:000011120 ## neurofilament medium polypeptide
+PR:000020724 ## neurofilament medium polypeptide, initiator methionine removed form
+PR:000015322 ## alpha-synuclein
+PR:000016777 ## tau-tubulin kinase 1
+PR:000016778 ## tau-tubulin kinase 2
+PR:000016963 ## polyubiquitin-C
+PR:000021935 ## immature protein part
+PR:000021937 ## initiator methionine
+PR:000018264 ## proteolytic cleavage product
+PR:000019502 ## alpha-crystallin A chain proteolytic cleavage product
+PR:000019505 ## beta-crystallin B1 proteolytic cleavage product
