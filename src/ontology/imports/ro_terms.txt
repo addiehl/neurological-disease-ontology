@@ -1,1 +1,49 @@
-
+RO:0000056 ## participates in
+RO:0002217 ## actively participates in
+RO:0001000 ## derives from
+RO:0001001 ## derives into
+RO:0001015 ## location of
+RO:0001018 ## contained in
+RO:0001019 ## contains
+RO:0001025 ## located in
+RO:0002087 ## immediately_preceded_by
+RO:0002090 ## immediately_precedes
+RO:0002180 ## has component
+RO:0002200 ## has phenotype
+RO:0002201 ## phenotype of
+RO:0002202 ## develops from
+RO:0002203 ## develops into
+RO:0002207 ## directly develops from
+RO:0002210 ## directly develops into
+RO:0002214 ## has prototype
+RO:0002215 ## capable of
+RO:0002218 ## has active participant
+RO:0002219 ## surrounded by
+RO:0002221 ## surrounds
+RO:0002222 ## temporally related to
+RO:0002091 ## starts_during
+RO:0002093 ## ends_during
+RO:0002092 ## happens_during
+RO:0002223 ## starts
+RO:0002224 ## starts with
+RO:0002225 ## develops from part of
+RO:0002226 ## develops in
+RO:0002230 ## ends with
+RO:0002231 ## has start location
+RO:0002233 ## has input
+RO:0002234 ## has output
+RO:0002297 ## results in formation of
+RO:0002323 ## mereotopologically related to
+RO:0002131 ## overlaps
+RO:0002326 ## contributes_to
+RO:0002351 ## has member
+RO:0002352 ## input of
+RO:0002353 ## output of
+RO:0002354 ## formed as result of
+RO:0002402 ## has direct output
+RO:0002452 ## has symptom
+RO:0002473 ## composed primarily of
+RO:0002517 ## is start sequence of
+RO:0002519 ## is end sequence of
+RO:0002524 ## has subsequence
+RO:0002525 ## is subsequence of
